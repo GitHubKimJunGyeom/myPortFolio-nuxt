@@ -14,11 +14,10 @@
 
                 <div class="space-y-8">
                     <p class="text-base sm:leading-relaxed md:text-2xl">
-                        Hi, I'm John. I'm a 35-year-old software engineer with a passion for creating innovative solutions.
-                        I graduated with a degree in Computer Science from a prestigious university and have been working in
-                        the tech industry for over a decade. Throughout my career, I have gained extensive experience in
-                        programming languages like Python, Java, and C++. I thrive in challenging environments and enjoy
-                        collaborating with teams to develop cutting-edge software applications.
+                       이지수이지수이지수이지수이지수이지수이지수이지수이지수이지수이지수이지수이지수이지수이지수이지수이지수이지수이지수이지수이지수이지수이지수이지수이지수
+
+                       <br>
+                       꼬추꼬추꼬추꼬추꼬추꼬추꼬추꼬추꼬추꼬추꼬추꼬추꼬추꼬추꼬추꼬추꼬추꼬추꼬추꼬추꼬추꼬추꼬추꼬추꼬추꼬추꼬추꼬추꼬추꼬추꼬추꼬추꼬추꼬추꼬추꼬추꼬추꼬추꼬추
                     </p>
 
                     <footer class="flex items-center space-x-4 md:space-x-0">
