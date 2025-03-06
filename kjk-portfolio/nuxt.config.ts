@@ -6,17 +6,19 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n'
   ],
   i18n: {
-    strategy: 'prefix_except_default', // デフォルト言語はプレフィックス無し
+    strategy: 'prefix_except_default',
     defaultLocale: 'ja',
     locales: [
       { 
         code: 'ja', 
-        language: 'ja-JP', 
-        name: 'Japanese', 
-        file: 'ja.ts' },
-      { code: 'ko', language: 'ko-KR', name: 'korea', file: 'ko.ts' },
+        file: 'ja.ts' 
+      },
+      { 
+        code: 'ko', 
+        file: 'ko.ts' 
+      },
     ],
     lazy: true,
-    langDir: 'lang/'
+    langDir: '/i18n/lang/'
   }
 })
