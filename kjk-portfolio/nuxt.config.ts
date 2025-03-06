@@ -19,6 +19,6 @@ export default defineNuxtConfig({
       },
     ],
     lazy: true,
-    langDir: '/i18n/lang/'
+    langDir: 'lang/'
   }
 })
