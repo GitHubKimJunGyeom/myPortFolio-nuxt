@@ -1,27 +1,20 @@
 <template>
     <!-- Header Section -->
-    <header class="bg-blue-900 text-white">
+    <header class="sticky top-0 bg-blue-900 text-white z-50 shadow-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
             <div class="flex items-center justify-between">
                 <!-- Logo Section -->
                 <div class="flex-shrink-0">
-                    <a href="#" class="text-2xl font-bold">Tailwind </a>
+                    <a href="#" class="text-2xl font-bold">KJK's Portfolio </a>
                 </div>
 
                 <!-- Navigation Menu -->
                 <nav class="hidden md:flex space-x-10 text-lg">
-                    <a href="#" class="hover:text-gray-300 transition-all">Home</a>
-                    <a href="#services" class="hover:text-gray-300 transition-all">Services</a>
-                    <a href="#about" class="hover:text-gray-300 transition-all">About Us</a>
-                    <a href="#contact" class="hover:text-gray-300 transition-all">Contact</a>
+                    <a href="#" class="hover:text-gray-300 transition-all">About me</a>
+                    <a href="#services" class="hover:text-gray-300 transition-all">Archiving</a>
+                    <a href="#about" class="hover:text-gray-300 transition-all">Projects</a>
+                    <a href="#contact" class="hover:text-gray-300 transition-all">Career</a>
                 </nav>
-
-                <!-- Call-to-Action Button -->
-                <div class="hidden md:block">
-                    <a href="#contact" class="bg-yellow-500 hover:bg-yellow-400 text-black py-2 px-6 rounded-full text-lg transition-all">
-                        Get in Touch
-                    </a>
-                </div>
 
                 <!-- Mobile Menu Button (for smaller screens) -->
                 <div class="md:hidden flex items-center">
@@ -35,10 +28,10 @@
 
             <!-- Mobile Navigation Menu -->
             <div id="mobile-menu" class="md:hidden mt-5 hidden space-y-4">
-                <a href="#" class="block text-lg hover:text-gray-300 transition-all">Home</a>
-                <a href="#services" class="block text-lg hover:text-gray-300 transition-all">Services</a>
-                <a href="#about" class="block text-lg hover:text-gray-300 transition-all">About Us</a>
-                <a href="#contact" class="block text-lg hover:text-gray-300 transition-all">Contact</a>
+                <a href="#" class="block text-lg hover:text-gray-300 transition-all">About me</a>
+                <a href="#services" class="block text-lg hover:text-gray-300 transition-all">Archiving</a>
+                <a href="#about" class="block text-lg hover:text-gray-300 transition-all">Projects</a>
+                <a href="#contact" class="block text-lg hover:text-gray-300 transition-all">Career</a>
             </div>
         </div>
     </header>
