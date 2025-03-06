@@ -13,6 +13,6 @@ export default defineNuxtConfig({
     ],
     defaultLocale: 'ja',
     lazy: true,
-    langDir: 'locales/'
+    langDir: 'locales',
   }
 })
