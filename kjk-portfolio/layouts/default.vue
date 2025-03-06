@@ -1,3 +1,12 @@
+<script setup lang="ts">
+    const { setLocale } = useI18n()
+
+    const changeLanguage = (event: Event) => {
+    const selectedLanguage = (event.target as HTMLSelectElement).value
+    setLocale(selectedLanguage)
+}
+</script>
+
 <template>
     <!-- Header Section -->
     <header class="sticky top-0 bg-blue-900 text-white z-50 shadow-md">
@@ -14,6 +23,13 @@
                     <a href="#services" class="hover:text-gray-300 transition-all">Archiving</a>
                     <a href="#about" class="hover:text-gray-300 transition-all">Projects</a>
                     <a href="#contact" class="hover:text-gray-300 transition-all">Career</a>
+                    <select 
+                        @change="changeLanguage" 
+                        class="w-48 p-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white"
+                        >
+                        <option value="ja">🇯🇵 日本語 (Japanese)</option>
+                        <option value="ko">🇬🇰🇷 한국어</option>
+                    </select>
                 </nav>
 
                 <!-- Mobile Menu Button (for smaller screens) -->
@@ -102,3 +118,4 @@
     </ul>
 </div>
 </template>
+
