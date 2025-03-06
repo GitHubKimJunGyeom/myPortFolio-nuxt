@@ -1,5 +1,5 @@
 <template>
-    <section class="bg-black overflow-visible my-0 py-24 mt-24">
+    <section class="bg-black overflow-visible">
         <div class="text-white items-center text-center flex flex-col">
             <h2 class="font-bold text-2xl lg:text-4xl">김준겸</h2>
                 <p class="mx-auto mt-6 max-w-xl text-lg md:text-xl leading-8 text-slate-400">
