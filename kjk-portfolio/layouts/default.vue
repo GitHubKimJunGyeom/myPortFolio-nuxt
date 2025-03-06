@@ -27,8 +27,8 @@
                         @change="changeLanguage" 
                         class="w-48 p-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white"
                         >
-                        <option value="ja">🇯🇵 日本語 (Japanese)</option>
-                        <option value="ko">🇬🇰🇷 한국어</option>
+                        <option value="ja">日本語</option>
+                        <option value="ko">한국어</option>
                     </select>
                 </nav>
 
