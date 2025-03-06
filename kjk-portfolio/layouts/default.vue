@@ -8,29 +8,29 @@
 </script>
 
 <template>
-    <!-- Header Section -->
     <header class="sticky top-0 bg-white text-black z-50 shadow-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
             <div class="flex items-center justify-between">
-                <!-- Logo Section -->
                 <div class="flex-shrink-0">
                     <a href="#" class="text-2xl font-bold">KJK's Portfolio </a>
                 </div>
 
-                <!-- Navigation Menu -->
                 <nav class="hidden md:flex space-x-10 text-lg">
-                    <a href="#" class="hover:text-gray-300 transition-all">About me</a>
-                    <a href="#services" class="hover:text-gray-300 transition-all">Archiving</a>
-                    <a href="#about" class="hover:text-gray-300 transition-all">Projects</a>
-                    <a href="#contact" class="hover:text-gray-300 transition-all">Career</a>
+                    <a href="#about_me" class="hover:text-gray-300 transition-all">About me</a>
+                    <a href="#skill" class="hover:text-gray-300 transition-all">Skill</a>
+                    <a href="#archiving" class="hover:text-gray-300 transition-all">Archiving</a>
+                    <a href="#projects" class="hover:text-gray-300 transition-all">Projects</a>
+                    <a href="#career" class="hover:text-gray-300 transition-all">Career</a>
                     <select 
                         @change="changeLanguage" 
                         class="w-48 
                         border
-                        border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-black"
+                        border-gray-900 
+                        text-center
+                        rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white"
                     >
-                        <option value="ja">日本語</option>
                         <option value="ko">한국어</option>
+                        <option value="ja">日本語</option>
                     </select>
                 </nav>
 
@@ -46,10 +46,11 @@
 
             <!-- Mobile Navigation Menu -->
             <div id="mobile-menu" class="md:hidden mt-5 hidden space-y-4">
-                <a href="#" class="block text-lg hover:text-gray-300 transition-all">About me</a>
-                <a href="#services" class="block text-lg hover:text-gray-300 transition-all">Archiving</a>
-                <a href="#about" class="block text-lg hover:text-gray-300 transition-all">Projects</a>
-                <a href="#contact" class="block text-lg hover:text-gray-300 transition-all">Career</a>
+                <a href="#about_me" class="block text-lg hover:text-gray-300 transition-all">About me</a>
+                <a href="#skill" class="block text-lg hover:text-gray-300 transition-all">Skill</a>
+                <a href="#archiving" class="block text-lg hover:text-gray-300 transition-all">Archiving</a>
+                <a href="#projects" class="block text-lg hover:text-gray-300 transition-all">Projects</a>
+                <a href="#career" class="block text-lg hover:text-gray-300 transition-all">Career</a>
             </div>
         </div>
     </header>

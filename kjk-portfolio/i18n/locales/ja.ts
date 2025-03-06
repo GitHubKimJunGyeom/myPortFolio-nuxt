@@ -1,15 +1,21 @@
 export default defineI18nLocale(async () => ({
-    introduce_h2: 'キムジュンギョム',
+    introduce_h1: 'キムジュンギョム',
     introduce_content_1: 'フルスタックエンジニア 職務、ポートフォリオ',
     introduce_content_2: 'こんにちは！\n効率を重視する開発者\nキムと申します！',
   
     about_me: '私について…',
+    about_me_title_name: '名前',
     about_me_name: 'キムジュンギョム',
+    about_me_title_birthday: '生年月日',
     about_me_birthday: '平成２年9月12日',
+    about_me_title_place: '位置',
     about_me_place: '東京、埼玉',
+    about_me_title_phone_number: '連絡先',
     about_me_phone_number: '070-3781-3027',
+    about_me_title_email: 'メール',
     about_me_email: 'wnsruadl90@naver.com',
-    about_me_education: '江原大学 日本学科\n韓国情報技術研究院の2D&3D ゲーム融合コンテンツ15 期卒業',
+    about_me_title_education: '学歴',
+    about_me_education: '江原(kangwon)大学 日本学科 \n韓国情報技術研究院の2D&3D \nゲーム融合コンテンツ15 期卒業',
   
     skill_language: '言語',
     skill_language_typescript: 'TypeScript',

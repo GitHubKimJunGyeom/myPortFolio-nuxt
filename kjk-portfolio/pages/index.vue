@@ -4,6 +4,9 @@ import AboutmeVue from '../components/Aboutme.vue';
     <div>
         <Introduce />
         <Aboutme />
+        <Skill />
+        <Archiving />
+        <Projects />
         <Career />
     </div>
 </template>

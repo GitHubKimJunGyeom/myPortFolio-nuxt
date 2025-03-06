@@ -18,6 +18,5 @@ export default defineNuxtConfig({
         file: 'ko.ts' 
       },
     ],
-    lazy: true,
   }
 })

@@ -1,61 +1,68 @@
-
-
 <template>
-    <div class="container relative z-40 mx-auto mt-12">
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mx-auto lg:w-full md:w-5/6 xl:shadow-small-blue">
-    <a href="#" class="block py-10 text-center border">
-      <div>
-        <img src="@/static/assets/img/user.svg" class="block mx-auto w-[32px] h-[32px]">
-        <p class="pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
-          portfolio
-        </p>
+  <div id="about_me" class="text-center pt-7">
+    <h2 class="font-bold text-2xl lg:text-4xl pb-6"> {{ $t('about_me') }} </h2>
+  </div>
+  <div class="flex items-center justify-center w-screen pb-10">
+    <div class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-12 max-w-6xl">
+      <div class="block text-center">
+          <img src="@/static/assets/img/user.svg" class="block mx-auto w-[32px] h-[32px]">
+          <p class="pt-1 font-black text-black text-xl">
+            {{ $t('about_me_title_name') }}
+          </p>
+          <p class="pt-2 text-sm font-medium font-body text-gray-800 lg:text-lg md:text-base">
+            {{ $t('about_me_name') }}
+          </p>
       </div>
-    </a>
 
-    <a href="#" class="block py-10 text-center border">
-      <div>
-        <img src="@/static/assets/img/calendar.svg" class="block mx-auto w-[32px] h-[32px]">
-        <p class="pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
-          portfolio
-        </p>
+      <div class="block text-center">
+          <img src="@/static/assets/img/calendar.svg" class="block mx-auto w-[32px] h-[32px]">
+          <p class="pt-1 font-black text-black text-xl">
+            {{ $t('about_me_title_birthday') }}
+          </p>
+          <p class="pt-2 text-sm font-medium font-body text-gray-800 lg:text-lg md:text-base">
+            {{ $t('about_me_birthday') }}
+          </p>
       </div>
-    </a>
 
-    <a href="#" class="block py-10 text-center border">
-      <div>
-        <img src="@/static/assets/img/map-marker.svg" class="block mx-auto w-[32px] h-[32px]">
-        <p class="pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
-          portfolio
-        </p>
+      <div class="block text-center">
+          <img src="@/static/assets/img/map-marker.svg" class="block mx-auto w-[32px] h-[32px]">
+          <p class="pt-1 font-black text-black text-xl">
+            {{ $t('about_me_title_place') }}
+          </p>
+          <p class="pt-2 text-sm font-medium capitalize font-body text-gray-800 lg:text-lg md:text-base">
+            {{ $t('about_me_place') }}
+          </p>
       </div>
-    </a>
 
-    <a href="#" class="block py-10 text-center border">
-      <div>
-        <img src="@/static/assets/img/phone.svg" class="block mx-auto w-[32px] h-[32px]">
-        <p class="pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
-          portfolio
-        </p>
+      <div class="block py-5 text-center">
+          <img src="@/static/assets/img/phone.svg" class="block mx-auto w-[32px] h-[32px]">
+          <p class="pt-1 font-black text-black text-xl">
+            {{ $t('about_me_title_phone_number') }}
+          </p>
+          <p class="pt-2 text-sm font-medium font-body text-gray-800 lg:text-lg md:text-base">
+            {{ $t('about_me_phone_number') }}
+          </p>
       </div>
-    </a>
 
-    <a href="#" class="block py-10 text-center border">
-      <div>
-        <img src="@/static/assets/img/email.svg" class="block mx-auto w-[32px] h-[32px]">
-        <p class="pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
-          portfolio
-        </p>
+      <div class="block py-5 text-center">
+          <img src="@/static/assets/img/email.svg" class="block mx-auto w-[32px] h-[32px]">
+          <p class="pt-1 font-black text-black text-xl">
+            {{ $t('about_me_title_email') }}
+          </p>
+          <p class="pt-2 text-sm font-medium font-body text-gray-800 lg:text-lg md:text-base">
+            {{ $t('about_me_email') }}
+          </p>
       </div>
-    </a>
 
-    <a href="#" class="block py-10 text-center border">
-      <div>
-        <img src="@/static/assets/img/pen.svg" class="block mx-auto w-[32px] h-[32px]">
-        <p class="pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
-          portfolio
-        </p>
+      <div class="block py-5 text-center">
+          <img src="@/static/assets/img/pen.svg" class="block mx-auto w-[32px] h-[32px]">
+          <p class="pt-2 font-black text-black text-xl">
+            {{ $t('about_me_title_education') }}
+          </p>
+          <p class="whitespace-pre-line pt-3 text-sm font-medium font-body text-gray-800 lg:text-lg md:text-base">
+            {{ $t('about_me_education') }}
+          </p>
       </div>
-    </a>
   </div>
 </div>
 
