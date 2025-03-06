@@ -13,6 +13,6 @@ export default defineNuxtConfig({
       { code: 'ko', language: 'ko-KR', name: 'korea', file: 'ko.ts' },
     ],
     lazy: true,
-    langDir: 'i18n/locales/'
+    langDir: '@locales/'
   }
 })
