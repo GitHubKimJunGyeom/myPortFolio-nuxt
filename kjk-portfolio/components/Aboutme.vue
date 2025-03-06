@@ -56,35 +56,6 @@
         </p>
       </div>
     </a>
-    
-    <!-- 추가할 항목 -->
-    <a href="#" class="block py-10 text-center border">
-      <div>
-        <img src="@/static/assets/img/example.svg" class="block mx-auto w-[32px] h-[32px]">
-        <p class="pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
-          portfolio
-        </p>
-      </div>
-    </a>
-
-    <a href="#" class="block py-10 text-center border">
-      <div>
-        <img src="@/static/assets/img/example2.svg" class="block mx-auto w-[32px] h-[32px]">
-        <p class="pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
-          portfolio
-        </p>
-      </div>
-    </a>
-
-    <a href="#" class="block py-10 text-center border">
-      <div>
-        <img src="@/static/assets/img/example3.svg" class="block mx-auto w-[32px] h-[32px]">
-        <p class="pt-4 text-sm font-medium capitalize font-body text-green-900 lg:text-lg md:text-base md:pt-6">
-          portfolio
-        </p>
-      </div>
-    </a>
-
   </div>
 </div>
 
