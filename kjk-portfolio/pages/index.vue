@@ -3,7 +3,7 @@ import AboutmeVue from '../components/Aboutme.vue';
 <template>
     <div>
         <Introduce />
-        <AboutmeVue />
+        <Aboutme />
         <Career />
     </div>
 </template>
