@@ -9,9 +9,14 @@ export default defineNuxtConfig({
     strategy: 'prefix_except_default', // デフォルト言語はプレフィックス無し
     defaultLocale: 'ja',
     locales: [
-      { code: 'ja', language: 'ja-JP', name: 'Japanese', file: 'ja.ts' },
+      { 
+        code: 'ja', 
+        language: 'ja-JP', 
+        name: 'Japanese', 
+        file: 'ja.ts' },
       { code: 'ko', language: 'ko-KR', name: 'korea', file: 'ko.ts' },
     ],
     lazy: true,
+    langDir: 'lang/'
   }
 })
