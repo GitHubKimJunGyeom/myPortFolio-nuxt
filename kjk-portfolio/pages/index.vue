@@ -1,5 +1,3 @@
-
-import AboutmeVue from '../components/Aboutme.vue';
 <template>
     <div>
         <Introduce />
