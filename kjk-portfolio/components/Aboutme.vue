@@ -1,12 +1,11 @@
 <template>
   <div id="about_me" class="flex items-center justify-center w-screen pt-7">
-    <img src="@/static/assets/img/svg/user.svg" class="block mx-auto w-[32px] h-[32px]">
     <h2 class="font-bold text-2xl lg:text-4xl pb-6"> {{ $t('about_me') }} </h2>
   </div>
   <div class="flex items-center justify-center w-screen pb-10">
     <div class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-12 max-w-6xl">
       <div class="block text-center">
-          <img src="@/static/assets/img/svg/user.svg" class="block mx-auto w-[32px] h-[32px]">
+          <img src="@/static/assets/img/svg/user.svg" class="block mx-auto w-[64px] h-[64px]">
           <p class="pt-1 font-black text-black text-xl">
             {{ $t('about_me_title_name') }}
           </p>
@@ -16,7 +15,7 @@
       </div>
 
       <div class="block text-center">
-          <img src="@/static/assets/img/svg/calendar.svg" class="block mx-auto w-[32px] h-[32px]">
+          <img src="@/static/assets/img/svg/calendar.svg" class="block mx-auto w-[64px] h-[64px]">
           <p class="pt-1 font-black text-black text-xl">
             {{ $t('about_me_title_birthday') }}
           </p>
@@ -26,7 +25,7 @@
       </div>
 
       <div class="block text-center">
-          <img src="@/static/assets/img/svg/map-marker.svg" class="block mx-auto w-[32px] h-[32px]">
+          <img src="@/static/assets/img/svg/map-marker.svg" class="block mx-auto w-[64px] h-[64px]">
           <p class="pt-1 font-black text-black text-xl">
             {{ $t('about_me_title_place') }}
           </p>
@@ -36,7 +35,7 @@
       </div>
 
       <div class="block py-5 text-center">
-          <img src="@/static/assets/img/svg/phone.svg" class="block mx-auto w-[32px] h-[32px]">
+          <img src="@/static/assets/img/svg/phone.svg" class="block mx-auto w-[64px] h-[64px]">
           <p class="pt-1 font-black text-black text-xl">
             {{ $t('about_me_title_phone_number') }}
           </p>
@@ -46,7 +45,7 @@
       </div>
 
       <div class="block py-5 text-center">
-          <img src="@/static/assets/img/svg/email.svg" class="block mx-auto w-[32px] h-[32px]">
+          <img src="@/static/assets/img/svg/email.svg" class="block mx-auto w-[64px] h-[64px]">
           <p class="pt-1 font-black text-black text-xl">
             {{ $t('about_me_title_email') }}
           </p>
@@ -56,7 +55,7 @@
       </div>
 
       <div class="block py-5 text-center">
-          <img src="@/static/assets/img/svg/pen.svg" class="block mx-auto w-[32px] h-[32px]">
+          <img src="@/static/assets/img/svg/pen.svg" class="block mx-auto w-[64px] h-[64px]">
           <p class="pt-2 font-black text-black text-xl">
             {{ $t('about_me_title_education') }}
           </p>
