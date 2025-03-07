@@ -1,5 +1,5 @@
 <template>
-  <div id="about_me" class="flex items-center justify-center w-screen pt-7">
+  <div id="about_me" class="flex items-center justify-center w-screen pt-7 pb-6">
     <h2 class="font-bold text-2xl lg:text-4xl pb-6 border-b"> {{ $t('about_me') }} </h2>
   </div>
   <div class="flex items-center justify-center w-screen pb-10">
