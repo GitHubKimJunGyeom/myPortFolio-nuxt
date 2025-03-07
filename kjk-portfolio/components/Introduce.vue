@@ -6,6 +6,9 @@
             <h3 class="text-gray-500 text-center text-1xl md:text-xl lg:text-3xl xl:text-3xl font-display font-bold mb-12 whitespace-pre-line">{{ $t('introduce_content_2') }}</h3>
         </div>
 
+        <div>
+            <a href="#about_me" class="inline-block bg-orange-500 text-white uppercase text-sm tracking-widest font-heading px-8 py-4">{{ $t('about_me') }} </a>
+        </div>
         <img src="@/static/assets/img/jpg/background.jpg" class="w-full h-full absolute inset-0 object-cover opacity-70" />
     </section>
 </template>
