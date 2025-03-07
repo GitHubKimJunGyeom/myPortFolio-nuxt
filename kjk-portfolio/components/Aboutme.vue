@@ -50,7 +50,7 @@
             {{ $t('about_me_title_email') }}
           </p>
           <p class="pt-2 text-sm font-medium font-body text-gray-800 lg:text-lg md:text-base">
-            {{ $t('about_me_email') }}
+            {{ $t('about_me_email') }}@naver.com
           </p>
       </div>
 

@@ -15,7 +15,7 @@ export default defineI18nLocale(() => ({
   about_me_title_phone_number: `連絡先`,
   about_me_phone_number: `070-3781-3027`,
   about_me_title_email: `メール`,
-  about_me_email: `wnsruadl90\@naver.com`,
+  about_me_email: `wnsruadl90`,
   about_me_title_education: `学歴`,
   about_me_education: `江原(kangwon)大学 日本学科 
 韓国情報技術研究院の2D&3D 
