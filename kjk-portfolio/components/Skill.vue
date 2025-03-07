@@ -6,7 +6,7 @@
         <h2 class="font-bold text-2xl lg:text-4xl pb-6 border-b"> {{ $t('skill') }} </h2>
     </div>
     <div class="flex items-center justify-center w-screen pb-10 bg-yellow-500">
-        <div class="h-80 w-[700px] rounded-[12px] bg-white p-4 shadow-md border flex gap-2 justify-center items-center">
+        <div class="h-80 w-[1400px] rounded-[12px] bg-white p-4 shadow-md border flex gap-2 justify-center items-center">
             <div>
                 <label>test</label>
                 <span class="bg-blue-600 font-bold text-white text-center py-1 px-2 text-lg rounded">Primary</span>
