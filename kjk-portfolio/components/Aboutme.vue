@@ -1,6 +1,6 @@
 <template>
   <div id="about_me" class="flex items-center justify-center w-screen pt-7">
-    <h2 class="font-bold text-2xl lg:text-4xl pb-6"> {{ $t('about_me') }} </h2>
+    <h2 class="font-bold text-2xl lg:text-4xl pb-6 border border-b"> {{ $t('about_me') }} </h2>
   </div>
   <div class="flex items-center justify-center w-screen pb-10">
     <div class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-12 max-w-6xl">
