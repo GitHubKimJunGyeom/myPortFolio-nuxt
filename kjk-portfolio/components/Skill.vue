@@ -1,5 +1,5 @@
 <template>
-    <div id="skills" class="flex items-center justify-center w-screen pt-7 pb-6">
+    <div id="skills" class="flex items-center justify-center w-screen pt-7 pb-6 bg-yellow-500">
         <a href="#skills">
         <img src="@/static/assets/img/svg/link-variant.svg" class="pb-6 w-[64px] h-[64px]">
         </a>
