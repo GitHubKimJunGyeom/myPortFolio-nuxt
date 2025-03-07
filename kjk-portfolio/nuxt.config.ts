@@ -7,6 +7,7 @@ export default defineNuxtConfig({
   ],
   i18n: {
     legacy: false,
+    allowComposition: true,
     strategy: 'prefix_except_default',
     defaultLocale: 'ja',
     locales: [
