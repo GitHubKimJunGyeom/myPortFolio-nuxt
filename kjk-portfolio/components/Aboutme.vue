@@ -1,7 +1,6 @@
 <template>
-  <div id="about_me" class="flex text-center pt-7">
-          <img src="@/static/assets/img/svg/user.svg" class="block mx-auto w-[32px] h-[32px]">
-
+  <div id="about_me" class="flex items-center justify-center w-screen pt-7">
+    <img src="@/static/assets/img/svg/user.svg" class="block mx-auto w-[32px] h-[32px]">
     <h2 class="font-bold text-2xl lg:text-4xl pb-6"> {{ $t('about_me') }} </h2>
   </div>
   <div class="flex items-center justify-center w-screen pb-10">
