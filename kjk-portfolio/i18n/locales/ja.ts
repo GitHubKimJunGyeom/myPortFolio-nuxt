@@ -1,6 +1,6 @@
 export default defineI18nLocale(() => ({
   introduce_h1: `キムジュンギョム`,
-  introduce_content_1: `フルスタックエンジニア 職務、ポートフォリオ`,
+  introduce_content_1: `フルスタックエンジニア 職務、ポートフォリオ `,
   introduce_content_2: `こんにちは！
 効率を重視する開発者
 キムと申します！`,
