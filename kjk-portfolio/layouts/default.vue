@@ -4,6 +4,14 @@
     const changeLanguage = (event: Event) => {
     const selectedLanguage = (event.target as HTMLSelectElement).value
     setLocale(selectedLanguage)
+
+    // Mobile Menu Toggle
+    const menuButton = document.getElementById('menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
 }
 </script>
 
@@ -36,7 +44,7 @@
 
                 <!-- Mobile Menu Button (for smaller screens) -->
                 <div class="md:hidden flex items-center">
-                    <button id="menu-button" class="text-white focus:outline-none">
+                    <button id="menu-button" class="text-black focus:outline-none">
                         <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                         </svg>
