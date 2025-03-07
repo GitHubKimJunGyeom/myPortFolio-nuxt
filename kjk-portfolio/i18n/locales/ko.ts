@@ -17,6 +17,7 @@ export default defineI18nLocale(() => ({
   about_me_title_education: '학력',
   about_me_education: '강원대학교 일본학과\n한국 정보기술연구원 2D&3D\n게임융합컨텐츠 15기 졸업',
 
+  skills: 'Skills',
   skill_language: 'Language',
   skill_language_typescript: 'TypeScript',
   skill_language_javascript: 'JavaScript',

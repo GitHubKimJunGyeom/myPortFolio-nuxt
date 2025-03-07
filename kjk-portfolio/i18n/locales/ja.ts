@@ -24,6 +24,7 @@ export default defineI18nLocale(() => ({
   skill_language_cSharp: 'C#',
   skill_language_ruby: 'Ruby On Rails',
 
+  skills: 'スキル',
   skill_frontend: 'フロントエンド',
   skill_frontend_nuxt: 'Nuxt.js(Vue)',
   skill_frontend_blade: 'Blade(Laravel)',
