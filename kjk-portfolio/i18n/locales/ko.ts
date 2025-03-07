@@ -1,4 +1,4 @@
-export default defineI18nLocale(async () => ({
+export default defineI18nLocale(() => ({
   introduce_h1: '김준겸',
   introduce_content_1: '풀스택 개발자 포트폴리오',
   introduce_content_2: '안녕하세요。\n효율을 중시하는 개발자\n김준겸입니다。',

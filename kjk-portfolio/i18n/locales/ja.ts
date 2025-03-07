@@ -1,4 +1,4 @@
-export default defineI18nLocale(async () => ({
+export default defineI18nLocale(() => ({
     introduce_h1: 'キムジュンギョム',
     introduce_content_1: 'フルスタックエンジニア 職務、ポートフォリオ',
     introduce_content_2: 'こんにちは！\n効率を重視する開発者\nキムと申します！',
