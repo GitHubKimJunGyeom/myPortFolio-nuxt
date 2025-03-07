@@ -1,6 +1,6 @@
 <template>
     <section id="skills" class="-mt-24 relative w-full py-12 px-12 bg-yellow-500">
-        <div class="flex gap-2">
+        <div class="flex gap-2 py-12 px-12">
             <label>test</label>
             <span class="bg-blue-600 font-bold text-white text-center py-1 px-2 text-lg rounded">Primary</span>
             <span class="bg-gray-500 font-bold text-white text-center py-1 px-2 text-lg rounded">Secondary</span>
