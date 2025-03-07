@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n'
   ],
   i18n: {
+    legacy: false,
     strategy: 'prefix_except_default',
     defaultLocale: 'ja',
     locales: [
