@@ -1,6 +1,6 @@
 <template>
   <div id="about_me" class="flex items-center justify-center w-screen pt-7 pb-6">
-    <img src="@/static/assets/img/svg/link-variant.svg" class="p-1 w-[64px] h-[64px]">
+    <img src="@/static/assets/img/svg/link-variant.svg" class="pb-6 w-[64px] h-[64px]">
     <h2 class="font-bold text-2xl lg:text-4xl pb-6 border-b"> {{ $t('about_me') }} </h2>
   </div>
   <div class="flex items-center justify-center w-screen pb-10">
