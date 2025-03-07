@@ -1,5 +1,10 @@
 <template>
   <div id="about_me" class="flex items-center justify-center w-screen pt-7 pb-6">
+    <button class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+      <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 8V2H7v6H2l8 8 8-8h-5zM0 18h20v2H0v-2z"/></svg>
+      <span>Download</span>
+    </button>
+    <img src="@/static/assets/img/svg/user.svg" class="block mx-auto w-[32px] h-[32px]">
     <h2 class="font-bold text-2xl lg:text-4xl pb-6 border-b"> {{ $t('about_me') }} </h2>
   </div>
   <div class="flex items-center justify-center w-screen pb-10">
