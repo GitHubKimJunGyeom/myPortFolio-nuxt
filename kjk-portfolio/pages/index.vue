@@ -4,7 +4,7 @@
         <Aboutme />
         <Skill />
         <Archiving />
-        <Projects />
+        <!-- <Projects /> -->
         <Career />
     </div>
 </template>
