@@ -52,6 +52,6 @@ export default defineI18nLocale(() => ({
 
   career: '経歴',
 
-  resolution:'いつの日か、太陽と海に別れを告げる時、幸せな夢を生きたと言えますように。'
+  resolution:'いつの日か、太陽と海に別れを告げる時、幸せな夢を生きたと言えますように。' 
 
 }))
