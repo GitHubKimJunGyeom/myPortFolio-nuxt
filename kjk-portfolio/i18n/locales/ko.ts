@@ -24,22 +24,18 @@ export default defineI18nLocale(() => ({
   skill_language_php: 'PHP',
   skill_language_cSharp: 'C#',
   skill_language_ruby: 'Ruby On Rails',
-
   skill_frontend: 'Frontend',
   skill_frontend_nuxt: 'Nuxt.js(Vue)',
   skill_frontend_blade: 'Blade(Laravel)',
   skill_frontend_blazor: 'Blazor(C#)',
   skill_frontend_tailwindcss: 'Tailwind CSS',
-  skill_frontend_sass: 'Sass(C#)',
-
+  skill_frontend_sass: 'Sass',
   skill_backend: 'Backend',
   skill_backend_laravel: 'Laravel',
-
   skill_DB: 'Database',
   skill_DB_MySql: 'MySQL',
   skill_DB_SqlServer: 'SQL Server',
   skill_DB_DynamoDB: 'DynamoDB',
-
   skill_devops: 'DevOps',
   skill_devops_aws: 'AWS',
   skill_devops_googlespanner: 'Google Cloud',
@@ -47,7 +43,9 @@ export default defineI18nLocale(() => ({
   skill_devops_vercel: 'Vercel',
   skill_devops_render: 'Render',
 
+  archiving:'ARCHIVING',
   archiving_github_content: '소스 코드 저장소',
+  archiving_obenjosu_content: '인디 밴드 오벤져스입니다.',
 
   projects: 'PROJECTS',
 

@@ -1,18 +1,26 @@
 <script setup lang="ts">
+    import { onMounted } from 'vue';
+    
     const { setLocale } = useI18n()
 
+    //change lang
     const changeLanguage = (event: Event) => {
-    const selectedLanguage = (event.target as HTMLSelectElement).value
-    setLocale(selectedLanguage)
+        const selectedLanguage = (event.target as HTMLSelectElement).value
+        setLocale(selectedLanguage)
+    };
 
-    // Mobile Menu Toggle
-    const menuButton = document.getElementById('menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    menuButton.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
+    onMounted(()=> {
+        // Mobile Menu Toggle
+        const menuButton = document.getElementById('menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        if(menuButton != null && mobileMenu != null) {
+            menuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
     });
-}
+    
 </script>
 
 <template>
@@ -25,7 +33,7 @@
 
                 <nav class="hidden md:flex space-x-10 text-lg">
                     <a href="#about_me" class="hover:text-gray-300 transition-all">About me</a>
-                    <a href="#skill" class="hover:text-gray-300 transition-all">Skill</a>
+                    <a href="#skills" class="hover:text-gray-300 transition-all">Skills</a>
                     <a href="#archiving" class="hover:text-gray-300 transition-all">Archiving</a>
                     <a href="#projects" class="hover:text-gray-300 transition-all">Projects</a>
                     <a href="#career" class="hover:text-gray-300 transition-all">Career</a>
@@ -37,8 +45,8 @@
                         text-center
                         rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white"
                     >
-                        <option value="ko">한국어</option>
                         <option value="ja">日本語</option>
+                        <option value="ko">한국어</option>
                     </select>
                 </nav>
 
