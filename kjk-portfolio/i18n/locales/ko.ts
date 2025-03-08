@@ -52,4 +52,6 @@ export default defineI18nLocale(() => ({
   projects: 'PROJECTS',
 
   career: 'CAREER',
+
+  resolution:'언젠가 태양과 바다에게 안녕이라고 말할 때 행복한 꿈을 살았다고 말할 수 있기를'
 }))
