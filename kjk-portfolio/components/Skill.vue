@@ -6,7 +6,7 @@
         <h2 class="font-black text-2xl lg:text-4xl pb-6 border-b"> {{ $t('skill') }} </h2>
     </div>
     <div class="flex items-center justify-center w-screen pb-10 bg-yellow-500">
-        <div class="w-[1000px] rounded-[12px] bg-white/80 p-4 shadow-md border flex gap-2 justify-center items-center">
+        <div class="rounded-[12px] bg-white/80 p-4 shadow-md border flex gap-2 justify-center items-center">
             <div class="mt-8 grid md:grid-cols-10 gap-1">
                 <div class="flex col-span-3 font-bold text-2xl py-1 px-2 m-1">
                     <img src="@/static/assets/img/svg/nuxt.svg" class="md:pb-6 md:w-[64px] md:h-[64px] sm:w-[32px] sm:h-[32px]">
