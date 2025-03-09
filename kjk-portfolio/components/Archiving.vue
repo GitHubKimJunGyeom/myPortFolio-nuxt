@@ -1,13 +1,13 @@
 <template>
-    <div id="skills" class="flex items-center justify-center w-screen pt-7 pb-6 bg-gray-800">
-        <a href="#skills">
+    <div id="archiving" class="flex items-center justify-center w-screen pt-7 pb-6 bg-gray-800">
+        <a href="#archiving">
         <img src="@/static/assets/img/svg/link-variant.svg" class="pb-6 w-[64px] h-[64px]">
         </a>
         <h2 class="font-black text-white text-2xl lg:text-4xl pb-6 border-b"> {{ $t('archiving') }} </h2>
     </div>
     <div class="flex items-center justify-center w-screen pb-10 bg-gray-800">
         <div class="w-[1000px] rounded-[12px] bg-white/80 p-4 shadow-md border flex gap-2 justify-center items-center">
-            <div class="mt-8 grid grid-cols-2 gap-1">
+            <div class="mt-8 grid sm:grid-cols-1 md:grid-cols-2 gap-1">
                 <a class="p-8 max-w-lg border border-indigo-300 rounded-2xl hover:shadow-xl hover:shadow-indigo-50 flex flex-col items-center"
                 href="https://github.com/GitHubKimJunGyeom">
                 <img src="@/static/assets/img/svg/github-logo-vector.svg" class="shadow rounded-lg overflow-hidden border" >
