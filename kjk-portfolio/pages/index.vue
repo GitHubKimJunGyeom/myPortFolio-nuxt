@@ -1,5 +1,4 @@
 
-import FolioMetaVue from '../components/FolioMeta.vue';
 <template>
     <div>
         <FolioMeta />
