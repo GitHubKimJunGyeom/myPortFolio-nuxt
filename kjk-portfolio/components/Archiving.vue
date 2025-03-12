@@ -5,8 +5,8 @@
         </a>
         <h2 class="font-black text-white text-2xl lg:text-4xl pb-6 border-b"> {{ $t('archiving') }} </h2>
     </div>
-    <div class="flex items-center justify-center w-screen pb-10 bg-gray-800">
-        <div class="w-[1000px] rounded-[12px] bg-white/80 p-4 shadow-md border flex gap-2 justify-center items-center">
+    <div class="flex items-center justify-center w-screen md:w-auto pb-10 bg-gray-800">
+        <div class="w-[1000px] rounded-[12px] bg-white/80 p-4 w-screen md:w-auto shadow-md border flex gap-2 justify-center items-center">
             <div class="mt-8 grid sm:grid-cols-1 md:grid-cols-2 gap-1">
                 <a class="p-8 max-w-lg border border-indigo-300 rounded-2xl hover:shadow-xl hover:shadow-indigo-50 flex flex-col items-center"
                 href="https://github.com/GitHubKimJunGyeom">
