@@ -7,10 +7,7 @@
             { name: 'charset', content: 'utf-8' },
             { name: 'color-scheme', content: 'light dark' },
         ],
-        link,
     })
-
-    defineOgImage({ url: '@/static/assets/img/jpg/background.jpg', width: 1200, height: 630, alt: 'KJK Portfolio' })
 </script>
 
 <template>
