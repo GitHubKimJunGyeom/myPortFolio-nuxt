@@ -7,7 +7,6 @@ export default defineNuxtConfig({
   ],
   i18n: {
     lazy: true,
-    strategy: 'prefix_except_default',
     defaultLocale: 'ja',
     locales: [
       { 
@@ -19,5 +18,12 @@ export default defineNuxtConfig({
         file: 'ko.ts' 
       },
     ],
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root',
+    },
+    strategy: 'prefix',
+    vueI18n: '~/i18n.config.ts',
   }
 })

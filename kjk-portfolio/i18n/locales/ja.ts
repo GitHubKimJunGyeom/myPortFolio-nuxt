@@ -27,6 +27,7 @@ export default defineI18nLocale(() => ({
   skill_frontend: 'フロントエンド',
   skill_frontend_nuxt: 'Nuxt.js(Vue)',
   skill_frontend_blade: 'Blade(Laravel)',
+  skill_frontend_blazor: 'Blazor(C#)',
   skill_frontend_tailwindcss: 'Tailwind CSS',
   skill_frontend_sass: 'Sass',
   skill_backend: 'バックエンド',
