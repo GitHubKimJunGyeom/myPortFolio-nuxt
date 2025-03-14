@@ -9,15 +9,6 @@ export default defineNuxtConfig({
     '@nuxt/scripts'
   ],
 
-  imports: {
-    presets: [
-      {
-        from: 'vue-sonner',
-        imports: ['toast'],
-      },
-    ],
-  },
-
   devtools: {
     enabled: true,
   },
@@ -55,13 +46,6 @@ export default defineNuxtConfig({
     },
   },
 
-  runtimeConfig: {
-    public: {
-      resend: !!process.env.NUXT_PRIVATE_RESEND_API_KEY,
-    },
-  },
-
-
   future: {
     compatibilityVersion: 4,
   },
@@ -71,29 +55,6 @@ export default defineNuxtConfig({
   },
 
   compatibilityDate: '2025-01-05',
-
-  nitro: {
-    experimental: {
-      websocket: true,
-    },
-    prerender: {
-      autoSubfolderIndex: false,
-      crawlLinks: true,
-      routes: ['/en', '/fr'],
-    },
-  },
-
-  hooks: {
-    'nitro:config': (config) => {
-      if (process.env.NUXT_PRIVATE_RESEND_API_KEY) {
-        config.handlers?.push({
-          method: 'post',
-          route: '/api/emails/send',
-          handler: '~~/server/emails/send.ts',
-        })
-      }
-    },
-  },
 
   i18n: {
     locales: [
