@@ -1,22 +1,104 @@
 export default defineNuxtConfig({
-  compatibilityDate: '2024-11-01',
-  devtools: { enabled: true },
   modules: [
-    '@nuxtjs/tailwindcss', 
-    '@nuxtjs/i18n'
+    '@vueuse/nuxt',
+    '@nuxt/ui',
+    '@nuxtjs/i18n',
+    '@nuxtjs/seo',
+    '@nuxt/content',
+    '@nuxt/image',
+    '@nuxt/scripts'
   ],
+
+  imports: {
+    presets: [
+      {
+        from: 'vue-sonner',
+        imports: ['toast'],
+      },
+    ],
+  },
+
+  devtools: {
+    enabled: true,
+  },
+
+  css: ['~/assets/style/main.css'],
+
+  site: {
+    url: 'https://canvas.hrcd.fr',
+    defaultLocale: 'en',
+    indexable: true,
+  },
+
+  colorMode: {
+    preference: 'dark',
+    fallback: 'dark',
+  },
+
+  content: {
+    renderer: {
+      anchorLinks: false,
+    },
+    preview: {
+      api: 'https://api.nuxt.studio',
+      dev: true,
+    },
+  },
+
+  mdc: {
+    highlight: {
+      theme: {
+        dark: 'github-dark',
+        default: 'github-dark',
+        light: 'github-light',
+      },
+    },
+  },
+
+  runtimeConfig: {
+    public: {
+      resend: !!process.env.NUXT_PRIVATE_RESEND_API_KEY,
+    },
+  },
+
+
+  future: {
+    compatibilityVersion: 4,
+  },
+
+  experimental: {
+    viewTransition: true,
+  },
+
+  compatibilityDate: '2025-01-05',
+
+  nitro: {
+    experimental: {
+      websocket: true,
+    },
+    prerender: {
+      autoSubfolderIndex: false,
+      crawlLinks: true,
+      routes: ['/en', '/fr'],
+    },
+  },
+
+  hooks: {
+    'nitro:config': (config) => {
+      if (process.env.NUXT_PRIVATE_RESEND_API_KEY) {
+        config.handlers?.push({
+          method: 'post',
+          route: '/api/emails/send',
+          handler: '~~/server/emails/send.ts',
+        })
+      }
+    },
+  },
+
   i18n: {
-    lazy: true,
-    defaultLocale: 'ja',
     locales: [
-      { 
-        code: 'ja', 
-        file: 'ja.ts' 
-      },
-      { 
-        code: 'ko', 
-        file: 'ko.ts' 
-      },
+      { code: 'ko', name: 'Korean', language: 'ko-KR' },
+      { code: 'ja', name: 'Japanese', language: 'ja-JP' },
     ],
     detectBrowserLanguage: {
       useCookie: true,
@@ -24,6 +106,25 @@ export default defineNuxtConfig({
       redirectOn: 'root',
     },
     strategy: 'prefix',
+    defaultLocale: 'ja',
     vueI18n: '~/i18n.config.ts',
-  }
+  },
+
+  icon: {
+    customCollections: [
+      {
+        prefix: 'custom',
+        dir: './app/assets/icons',
+      },
+    ],
+    clientBundle: {
+      scan: true,
+      includeCustomCollections: true,
+    },
+    provider: 'iconify',
+  },
+
+  ogImage: {
+    zeroRuntime: true,
+  },
 })
