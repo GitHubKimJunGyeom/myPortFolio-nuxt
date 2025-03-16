@@ -58,8 +58,8 @@ export default defineNuxtConfig({
 
   i18n: {
     locales: [
-      { code: 'ko', name: 'Korean', language: 'ko-KR' },
       { code: 'ja', name: 'Japanese', language: 'ja-JP' },
+      { code: 'ko', name: 'Korean', language: 'ko-KR' }
     ],
     detectBrowserLanguage: {
       useCookie: true,
