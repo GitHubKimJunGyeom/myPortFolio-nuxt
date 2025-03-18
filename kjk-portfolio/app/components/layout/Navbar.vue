@@ -1,13 +1,5 @@
 <script setup lang="ts">
     import { onMounted } from 'vue';
-    
-    const { setLocale } = useI18n()
-
-    //change lang
-    const changeLanguage = (event: Event) => {
-        const selectedLanguage = (event.target as HTMLSelectElement).value
-        setLocale(selectedLanguage)
-    };
 
     onMounted(()=> {
         // Mobile Menu Toggle
@@ -22,7 +14,6 @@
     });
     
 </script>
-
 <template>
     <header class="sticky top-0 bg-white text-black z-50 shadow-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
@@ -37,18 +28,9 @@
                     <a href="#archiving" class="hover:text-gray-300 transition-all">Archiving</a>
                     <a href="#projects" class="hover:text-gray-300 transition-all">Projects</a>
                     <a href="#career" class="hover:text-gray-300 transition-all">Career</a>
-                    <select 
-                        @change="changeLanguage" 
-                        class="w-48 
-                        border
-                        border-gray-900 
-                        text-center
-                        rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white"
-                    >
-                        <option value="ja">日本語</option>
-                        <option value="ko">한국어</option>
-                    </select>
+                   
                 </nav>
+                <SettingsLanguageToggle />
 
                 <!-- Mobile Menu Button (for smaller screens) -->
                 <div class="md:hidden flex items-center">
@@ -67,17 +49,6 @@
                 <a href="#archiving" class="block text-lg hover:text-gray-300 transition-all">Archiving</a>
                 <a href="#projects" class="block text-lg hover:text-gray-300 transition-all">Projects</a>
                 <a href="#career" class="block text-lg hover:text-gray-300 transition-all">Career</a>
-                <select 
-                    @change="changeLanguage" 
-                    class="
-                    border
-                    border-gray-900 
-                    text-center
-                    rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 bg-white"
-                >
-                    <option value="ja">日本語</option>
-                    <option value="ko">한국어</option>
-                </select>
             </div>
         </div>
     </header>
