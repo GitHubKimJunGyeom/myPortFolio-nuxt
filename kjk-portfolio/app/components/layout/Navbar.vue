@@ -11,11 +11,19 @@
                 mobileMenu.classList.toggle('hidden');
             });
         }
+
+        //TODO const menuHeight = document.querySelector(".header");
+
+        // const location = document.querySelector("#header");
+
+        // console.log(menuHeight)
+        // console.log(location)
+
     });
-    
+ 
 </script>
 <template>
-    <header class="sticky top-0 bg-white text-black z-50 shadow-md">
+    <header id="header" class="header sticky top-0 bg-white text-black z-50 shadow-md">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5">
             <div class="flex items-center justify-between">
                 <div class="flex-shrink-0">

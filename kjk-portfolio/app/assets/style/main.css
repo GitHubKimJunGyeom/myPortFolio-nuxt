@@ -9,7 +9,7 @@
   @apply font-geist text-neutral-700/90 dark:text-neutral-300 leading-relaxed;
 
   h1 {
-    @apply text-2xl sm:text-3xl text-zinc-900 dark:text-zinc-100 italic font-[600] mb-6 mt-8;
+    @apply text-2xl sm:text-3xl text-zinc-900 dark:text-zinc-100 font-[600] mb-6 mt-8;
   }
 
   h2 {
