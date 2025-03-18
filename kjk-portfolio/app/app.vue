@@ -7,11 +7,11 @@
 <template>
   <html>
     <body>
-    <LayoutScrollToTop />
     <NuxtLayout>
       <UApp :locale="locales[locale]">
         <NuxtPage />
       </UApp>
+      <LayoutScrollToTop />
     </NuxtLayout>
     </body>
   </html>
