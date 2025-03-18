@@ -1,26 +1,36 @@
 <script setup lang="ts">
-    import { onMounted } from 'vue';
+import { onMounted } from 'vue';
 
-    onMounted(()=> {
-        // Mobile Menu Toggle
-        const menuButton = document.getElementById('menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        if(menuButton != null && mobileMenu != null) {
-            menuButton.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
-        }
+onMounted(() => {
+  // Mobile Menu Toggle
+  const menuButton = document.getElementById('menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
 
-        //TODO const menuHeight = document.querySelector(".header");
-
-        // const location = document.querySelector("#header");
-
-        // console.log(menuHeight)
-        // console.log(location)
-
+  if (menuButton != null && mobileMenu != null) {
+    menuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
     });
- 
+  }
+
+  // Smooth Scroll with Offset
+  const links = document.querySelectorAll('a[href^="#"]');
+  const header = document.querySelector('.header') as HTMLElement;
+  const headerHeight = header ? header.offsetHeight : 0;
+
+  links.forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetId = (link as HTMLAnchorElement).getAttribute('href')?.substring(1);
+      const targetElement = document.getElementById(targetId || '');
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop - headerHeight, // header 높이만큼 오프셋을 적용
+          behavior: 'smooth',
+        });
+      }
+    });
+  });
+});
 </script>
 <template>
     <header id="header" class="header sticky top-0 bg-white text-black z-50 shadow-md">
