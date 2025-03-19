@@ -3,12 +3,12 @@
   // import { withLeadingSlash, joinURL } from 'ufo'
 
   
-  // const props = defineProps({
-  //   name: {
-  //     type: String,
-  //     default: ''
-  //   }
-  // })
+  const props = defineProps({
+    name: {
+      type: String,
+      default: ''
+    }
+  })
 
   // alert(props.name)
   // const { locale, t, localeProperties } = useI18n()

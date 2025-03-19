@@ -15,7 +15,7 @@ export const collections = {
     type: 'data',
     source: 'projects.json',
     schema: z.object({
-      career: z.array(
+      project: z.array(
         z.object({
           name: z.string().nonempty(),
         }),
