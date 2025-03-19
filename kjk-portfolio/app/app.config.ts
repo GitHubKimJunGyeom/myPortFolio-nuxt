@@ -8,7 +8,7 @@ export default defineAppConfig({
         wrapper: '',
         body: 'flex-1 overflow-y-auto p-4 sm:p-6 bg-white',
         footer: 'flex items-center gap-1.5 p-4 sm:px-6 bg-white',
-        title: 'text-(--ui-text-highlighted) font-semibold',
+        title: 'text-[var(--ui-text-highlighted)] font-semibold',
         description: 'mt-1 text-(--ui-text-muted) text-sm',
         close: 'absolute top-4 end-4'
       },
