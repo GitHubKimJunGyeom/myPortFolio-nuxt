@@ -28,10 +28,10 @@
 <template>
     <div class="border w-auto max-w-full mx-3 rounded-lg shadow-2xl mt-5 dark:shadow-blue-900">
       <div class="flex flex-col items-start px-6 py-4">
-        <div class="flex flex-col w-24 sm:w-48 md:w-90">
+        <div class="flex flex-col w-24 sm:w-48 md:w-90 border-b-1 border-gray-300 mb-3">
           <div class="font-bold text-xl dark:text-gray-100 w-3/4 md:w-1/2 lg:w-1/3">{{props.name}}</div>
-          <div class="w-3/4 md:w-1/2 lg:w-1/3 h-1 border-2 border-blue-500 mb-3"></div>
-          <p class="text-gray-500 dark:text-gray-200 text-start">In this plan you will get</p>
+          <div class="w-3/4 md:w-1/2 lg:w-1/3 h-1 border-2 border-blue-500 mb-2"></div>
+          <p class="text-gray-500 dark:text-gray-200">1인 개발 프로젝트</p>
         </div>
         <div class="text-gray-500 dark:text-gray-200 text-start">
           <p>In this plan you will get</p>

@@ -11,6 +11,15 @@ image: https://canvas.hrcd.fr/articles/launch-your-porfolio.jpg
 readingTime: "5"
 ---
 
+::intro
+#hero_title
+The efficiency of one, the talent of three. Why look elsewhere?
+
+#hero_subtitle
+Developer, art director and photographer, I fuse technicality and aestheticism to bring a unique dimension to my work. Passionate about beauty, I give life to projects that captivate and convert
+::
+
+
 ## 🔗 Deployment URL
 
 URL
