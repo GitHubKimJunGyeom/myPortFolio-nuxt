@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-  const career_list = await queryCollection('career_list').first()
+  const careers = await queryCollection('careers').first()
 </script>
 <template>
   <div id="career" class="w-full text-center">
@@ -12,7 +12,7 @@
   </div>
 
   <CareerItem 
-    v-for="career in career_list.career"
+    v-for="career in careers.career"
     :name="career.name"
     />
 </template>

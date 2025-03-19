@@ -11,7 +11,7 @@
   })
   const { locale, t, localeProperties } = useI18n()
   
-  const path = computed(() => withLeadingSlash(joinURL(locale.value, props.name)))
+  const path = computed(() => withLeadingSlash(joinURL("careers", locale.value, props.name)))
   const collectionName = `${props.name}_${locale.value}`;
   const collection = computed(() => collectionName as keyof Collections)
 
