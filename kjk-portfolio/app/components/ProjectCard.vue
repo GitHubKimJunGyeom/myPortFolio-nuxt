@@ -25,17 +25,15 @@
   //   throw createError({ statusCode: 404, statusMessage: 'Page not found' })
   // }
 </script>
-<div class="w-screen h-full dark:bg-gray-700">
-  <div class="flex justify-center flex-wrap">
-    <div class="border w-full max-w-sm md:w-1/2 lg:w-1/3 mx-3 rounded-lg shadow-lg mt-5 dark:shadow-blue-900">
-      <div class="flex flex-col items-center md:items-start px-6 py-4">
-        
-        <div class="flex flex-col w-24">
-          <h2 class="font-bold text-xl dark:text-gray-100">Basic Plan</h2>
-          <div class="border-2 border-blue-500 mb-3 text"></div>
+<template>
+    <div class="border w-auto max-w-full mx-3 rounded-lg shadow-2xl mt-5 dark:shadow-blue-900">
+      <div class="flex flex-col items-start px-6 py-4">
+        <div class="flex flex-col w-24 sm:w-48 md:w-90">
+          <div class="font-bold text-xl dark:text-gray-100 w-3/4 md:w-1/2 lg:w-1/3">{{props.name}}</div>
+          <div class="w-3/4 md:w-1/2 lg:w-1/3 h-1 border-2 border-blue-500 mb-3"></div>
+          <p class="text-gray-500 dark:text-gray-200 text-start">In this plan you will get</p>
         </div>
-       
-        <div class="text-gray-500 dark:text-gray-200 text-center md:text-start">
+        <div class="text-gray-500 dark:text-gray-200 text-start">
           <p>In this plan you will get</p>
           <ul>
             <li>item 1</li>
@@ -44,15 +42,14 @@
           </ul>
         </div>
       </div>
-
-      <div class="flex flex-col items-center md:items-start bg-gray-100 px-6 py-3 rounded-lg dark:bg-blue-100">
+      <div class="flex flex-col items-start bg-gray-100 px-6 py-3 rounded-lg dark:bg-blue-100">
         <h2 class="font-bold text-2xl mb-2">$9.99/mo</h2>
-        <p class="text-gray-600 dark:text-gray-600">Access to basic features</p>
-        <button class="bg-blue-600 px-4 py-2 mt-3 rounded font-semibold text-white hover:bg-blue-700">Subscribe</button>
+        <p class="text-gray-600 dark:text-gray-600 rounded-lg bg-gray-500">Access to basic features</p>
+        <button class="bg-blue-600 px-4 py-2 mt-3 rounded font-semibold text-white hover:bg-blue-700">Read Me</button>
       </div>
     </div>
-  </div>
-</div>
+</template>
+
 
 
 
