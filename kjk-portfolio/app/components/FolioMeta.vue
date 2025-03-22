@@ -26,66 +26,107 @@
 </script>
 
 <style>
-/* 한글용 LINE Seed */
+/** 영어 */
 @font-face {
-font-family: 'LINESeed';
-src: url('/ko/fonts/LINESeedKR-Bd.woff2') format('woff2'),
-    url('/ko/fonts/LINESeedKR-Bd.woff') format('woff');
-font-weight: 700;
-font-style: normal;
+    font-family: 'LINESeed';
+    src: url('/fonts/en/LINESeedSans_W_Bd.woff2') format('woff2'),
+        url('/fonts/en/LINESeedSans_W_Bd.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
 }
 
 @font-face {
-font-family: 'LINESeed';
-src: url('/ko/fonts/LINESeedKR-Rg.woff2') format('woff2'), /* WOFF2 우선 적용 */
-    url('/ko/fonts/LINESeedKR-Rg.woff') format('woff');   /* WOFF 대체 적용 */
-font-weight: 400;
-font-style: normal;
+    font-family: 'LINESeed';
+    src: url('/fonts/en/LINESeedSans_W_He.woff2') format('woff2'),
+        url('/fonts/en/LINESeedSans_W_He.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
 }
 
 @font-face {
-font-family: 'LINESeed';
-src: url('/ko/fonts/LINESeedKR-Th.woff2') format('woff2'), /* WOFF2 우선 적용 */
-    url('/ko/fonts/LINESeedKR-Th.woff') format('woff');   /* WOFF 대체 적용 */
-font-weight: 200;
-font-style: normal;
-}
-
-/* 일본어 폰트 적용 */
-@font-face {
-font-family: 'LINESeed';
-src: url('/fonts/LINESeedJP-Bd.woff2') format('woff2'),
-    url('/fonts/LINESeedJP-Bd.woff') format('woff');
-font-weight: 700;
-font-style: normal;
-unicode-range: U+3000-30FF;
+    font-family: 'LINESeed';
+    src: url('/fonts/en/LINESeedSans_W_Rg.woff2') format('woff2'),
+        url('/fonts/en/LINESeedSans_W_Rg.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
 }
 
 @font-face {
-font-family: 'LINESeed';
-src: url('/fonts/LINESeedJP-Eb.woff2') format('woff2'),
-    url('/fonts/LINESeedJP-Eb.woff') format('woff');
-font-weight: 800;
-font-style: normal;
-unicode-range: U+3000-30FF;
+    font-family: 'LINESeed';
+    src: url('/fonts/en/LINESeedSans_W_Th.woff2') format('woff2'),
+        url('/fonts/en/LINESeedSans_W_Th.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
 }
 
 @font-face {
-font-family: 'LINESeed';
-src: url('/fonts/LINESeedJP-Rg.woff2') format('woff2'),
-    url('/fonts/LINESeedJP-Rg.woff') format('woff');
-font-weight: 400;
-font-style: normal;
-unicode-range: U+3000-30FF; /* 일본어 유니코드 범위 */
+    font-family: 'LINESeed';
+    src: url('/fonts/en/LINESeedSans_W_XBd.woff2') format('woff2'),
+        url('/fonts/en/LINESeedSans_W_XBd.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/** 한국어 */
+@font-face {
+    font-family: 'LINESeed';
+    src: url('/fonts/ko/LINESeedKR-Bd.woff2') format('woff2'),
+        url('/fonts/ko/LINESeedKR-Bd.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
 }
 
 @font-face {
-font-family: 'LINESeed';
-src: url('/fonts/LINESeedJP-Th.woff2') format('woff2'),
-    url('/fonts/LINESeedJP-Th.woff') format('woff');
-font-weight: 200;
-font-style: normal;
-unicode-range: U+3000-30FF; /* 일본어 유니코드 범위 */
+    font-family: 'LINESeed';
+    src: url('/fonts/ko/LINESeedKR-Rg.woff2') format('woff2'),
+        url('/fonts/ko/LINESeedKR-Rg.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LINESeed';
+    src: url('/fonts/ko/LINESeedKR-Th.woff2') format('woff2'),
+        url('/fonts/ko/LINESeedKR-Th.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+}
+
+/** 日本語 */
+@font-face {
+    font-family: 'LINESeed';
+    src: url('/fonts/ja/LINESeedJP_OTF_Bd.woff2') format('woff2'),
+        url('/fonts/ja/LINESeedJP_OTF_Bd.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    unicode-range: U+3000-30FF, U+4E00-9FFF;
+}
+
+@font-face {
+    font-family: 'LINESeed';
+    src: url('/fonts/ja/LINESeedJP_OTF_Eb.woff2') format('woff2'),
+        url('/fonts/ja/LINESeedJP_OTF_Eb.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    unicode-range: U+3000-30FF, U+4E00-9FFF;
+}
+
+@font-face {
+    font-family: 'LINESeed';
+    src: url('/fonts/ja/LINESeedJP_OTF_Rg.woff2') format('woff2'),
+        url('/fonts/ja/LINESeedJP_OTF_Rg.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    unicode-range: U+3000-30FF, U+4E00-9FFF;
+}
+
+@font-face {
+    font-family: 'LINESeed';
+    src: url('/fonts/ja/LINESeedJP_OTF_Th.woff2') format('woff2'),
+        url('/fonts/ja/LINESeedJP_OTF_Th.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    unicode-range: U+3000-30FF, U+4E00-9FFF;
 }
 
 /* 적용 */

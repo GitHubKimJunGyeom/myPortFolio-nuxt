@@ -1,4 +1,18 @@
 import { defineCollection, z } from '@nuxt/content'
+
+const commonProjectSchema = z.object({
+  title: z.string().nonempty(),
+  date: z.string().nonempty(),
+  isindividual: z.string().nonempty(),
+  description: z.string().nonempty(),
+  sub_description: z.array(z.string().nonempty()), 
+  tags: z.array(z.string().nonempty()),
+  image: z.string().url(),
+  readingTime: z.string().nonempty(),
+  url: z.string().nonempty(),
+})
+
+
 export const collections = {
   careers: defineCollection({
     type: 'data',
@@ -51,5 +65,17 @@ export const collections = {
     type: 'page',
     source: 'careers/ko/useful.md',
     schema: z.object({})
+  }),
+
+
+  introduction_ko: defineCollection({
+    type: 'page',
+    source: 'projects/ko/introduction.md',
+    schema: commonProjectSchema
+  }),
+  introduction_ja: defineCollection({
+    type: 'page',
+    source: 'projects/ja/introduction.md',
+    schema: commonProjectSchema
   })
 }

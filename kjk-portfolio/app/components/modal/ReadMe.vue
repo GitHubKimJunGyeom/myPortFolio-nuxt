@@ -28,11 +28,7 @@
 <template>
   <UModal 
     :title="temp">
-    <a class="cursor-pointer text-indigo-500 inline-flex items-center">ReadMe
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-            <path d="M5 12h14M12 5l7 7-7 7"></path>
-        </svg>
-    </a>
+    <button class="bg-blue-600 px-4 py-2 mt-3 rounded font-semibold text-white hover:bg-blue-700">Read Me</button>
     <template #body>
       <article class="markdown mx-auto px-4 sm:max-w-2xl md:max-w-3xl lg:max-w-4xl">
         Comming soon
