@@ -3,7 +3,7 @@
         <a href="#skills">
         <img src="/static/assets/img/svg/link-variant.svg" class="pb-6 w-[64px] h-[64px]">
         </a>
-        <h2 class="font-black text-2xl lg:text-4xl pb-6 border-b"> {{ $t('skill.title') }} </h2>
+        <h2 class="font-black text-2xl lg:text-6xl pb-6 border-b"> {{ $t('skill.title') }} </h2>
     </div>
     <div class="flex items-center justify-center w-screen pb-10 bg-yellow-500">
         <div class="rounded-[12px] bg-white/80 p-4 w-screen md:w-auto shadow-md border flex gap-2 justify-center items-center">

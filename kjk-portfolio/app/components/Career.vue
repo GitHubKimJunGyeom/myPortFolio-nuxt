@@ -7,7 +7,7 @@
       <a href="#career">
         <img src="/static/assets/img/svg/link-variant.svg" class="pb-6 w-[64px] h-[64px]">
       </a>
-      <h2 class="font-black text-2xl lg:text-4xl pb-6 border-b"> {{ $t('career.title') }} </h2>
+      <h2 class="font-black text-2xl lg:text-6xl pb-6 border-b"> {{ $t('career.title') }} </h2>
     </div>
   </div>
 
