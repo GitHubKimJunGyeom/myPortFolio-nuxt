@@ -1,7 +1,6 @@
 <script setup lang="ts">
   import type { Collections } from '@nuxt/content'
   import { withLeadingSlash, joinURL } from 'ufo'
-
   
   const props = defineProps({
     name: {
@@ -11,7 +10,6 @@
   })
 
   const { locale, t, localeProperties } = useI18n()
-  
   const path = computed(() => withLeadingSlash(joinURL("projects", locale.value, props.name)))
   const collectionName = `${props.name}_${locale.value}`;
   const collection = computed(() => collectionName as keyof Collections)
@@ -48,8 +46,10 @@
             {{ page?.url }}
           </a>
         </p>
-        <p class="text-black rounded-lg border bg-gray-500 p-2">{{ page?.tags}}</p>
-        <!-- <ModalReadMe /> -->
+        <p class="text-black rounded-lg border border-yellow-300 bg-yellow-100 p-2">{{ page?.tags}}</p>
+        <ModalReadMe 
+          :page="page"
+        />
       </div>
     </div>
 </template>

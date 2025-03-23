@@ -37,7 +37,7 @@
   }
 
   pre {
-    @apply text-sm sm:text-base text-zinc-900 my-4 p-4 bg-neutral-100 rounded-lg overflow-x-auto;
+    @apply text-sm sm:text-base text-zinc-900 my-4 p-4 rounded-lg overflow-x-auto bg-gray-100;
   }
 
   code {

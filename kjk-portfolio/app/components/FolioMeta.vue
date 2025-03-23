@@ -131,7 +131,7 @@
 
 /* 적용 */
 body {
-font-family: 'LINESeed';
+    font-family: 'LINESeed';
 }
 </style>
 
