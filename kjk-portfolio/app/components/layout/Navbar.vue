@@ -11,25 +11,6 @@ onMounted(() => {
       mobileMenu.classList.toggle('hidden');
     });
   }
-
-  // Smooth Scroll with Offset
-  const links = document.querySelectorAll('a[href^="#"]');
-  const header = document.querySelector('.header') as HTMLElement;
-  const headerHeight = header ? header.offsetHeight : 0;
-
-  links.forEach((link) => {
-    link.addEventListener('click', (e) => {
-      e.preventDefault();
-      const targetId = (link as HTMLAnchorElement).getAttribute('href')?.substring(1);
-      const targetElement = document.getElementById(targetId || '');
-      if (targetElement) {
-        window.scrollTo({
-          top: targetElement.offsetTop - headerHeight, // header 높이만큼 오프셋을 적용
-          behavior: 'smooth',
-        });
-      }
-    });
-  });
 });
 </script>
 <template>
