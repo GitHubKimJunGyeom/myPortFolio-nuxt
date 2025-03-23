@@ -1,4 +1,16 @@
 <script setup lang="ts">
+    const { seo, profile } = useAppConfig()
+
+    useSeoMeta({
+        ogSiteName: seo.title,
+        ogTitle: seo.title,
+        ogDescription: seo.description,
+        ogType: 'website',
+        ogUrl: seo.url,
+        author: profile.name,
+        title: seo.title,
+        description: seo.description,
+    })
 
     useHead({
         title: 'KJK Portfolio',

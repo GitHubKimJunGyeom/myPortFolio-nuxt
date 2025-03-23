@@ -1,4 +1,15 @@
 export default defineAppConfig({
+  profile: {
+    name: 'Kim JunGyeom',
+    job: 'system engineer',
+    email: 'wnsruadl90@naver.com',
+    phone: '(+81) 070 3781 3027'
+  },
+  seo: {
+    title: 'ポートフォリオ ウェブサイト',
+    description: 'Nuxt3を活用した多言語対応ポートフォリオウェブサイトです。',
+    url: 'https://tokyokimportfolio.vercel.app'
+  },
   ui: {
     modal: {
       slots: {
