@@ -36,7 +36,14 @@
         ]
     })
 </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K2VN577QKM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-K2VN577QKM');
+</script>
 <style>
 /** 영어 */
 @font-face {
