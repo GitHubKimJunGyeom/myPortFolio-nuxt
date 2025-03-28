@@ -18,8 +18,7 @@
                     </div>
                 </div>
                 </a>
-                <a class="p-8 max-w-lg border border-indigo-300 rounded-2xl hover:shadow-xl hover:shadow-indigo-50 flex flex-col items-center"
-                href="https://github.com/GitHubKimJunGyeom">
+                <a class="p-8 max-w-lg border border-indigo-300 rounded-2xl hover:shadow-xl hover:shadow-indigo-50 flex flex-col items-center">
                 <img src="/static/assets/img/svg/obenjos.svg" class="shadow rounded-lg overflow-hidden border" >
                 <div class="mt-8">
                     <p class="mt-2 text-gray-600">Comming soon......</p>
