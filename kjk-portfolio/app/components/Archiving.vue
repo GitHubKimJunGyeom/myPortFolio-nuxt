@@ -7,26 +7,39 @@
     </div>
     <div class="flex items-center justify-center w-screen md:w-auto pb-10 bg-gray-800">
         <div class="rounded-[12px] bg-white/80 p-4 w-screen md:w-auto shadow-md border flex gap-2 justify-center items-center">
-            <div class="mt-8 grid sm:grid-cols-1 md:grid-cols-2 gap-1">
-                <a class="p-8 max-w-lg border border-indigo-300 rounded-2xl hover:shadow-xl hover:shadow-indigo-50 flex flex-col items-center"
-                href="https://github.com/GitHubKimJunGyeom">
-                <img src="/static/assets/img/svg/github-logo-vector.svg" class="shadow rounded-lg overflow-hidden border h-96" >
-                <div class="mt-8">
-                    <p class="mt-2 text-gray-600">https://github.com/GitHubKimJunGyeom</p>
-                    <div class="mt-5">
-                        <button type="button" class="inline-flex items-center rounded-md border border-transparent bg-gray-800 px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-gray-900">{{ $t('archiving.github_content') }}</button>
+            <div class="mt-8 grid sm:grid-cols-1 md:grid-cols-3 gap-1">
+                <a 
+                    class="p-8 max-w-lg border border-indigo-300 rounded-2xl hover:shadow-2xl hover:shadow-indigo-500 flex flex-col items-center"
+                    href="https://github.com/GitHubKimJunGyeom"
+                >
+                    <img src="/static/assets/img/svg/github-logo-vector.svg" class="shadow rounded-lg overflow-hidden border h-96" >
+                    <div class="mt-8">
+                        <div class="mt-5">
+                            <button type="button" class="inline-flex items-center rounded-md border border-transparent bg-gray-800 px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-gray-900">{{ $t('archiving.github_content') }}</button>
+                        </div>
                     </div>
-                </div>
                 </a>
-                <a class="p-8 max-w-lg border border-indigo-300 rounded-2xl hover:shadow-xl hover:shadow-indigo-50 flex flex-col items-center"
-                href="https://www.youtube.com/@cento7517">
-                <img src="/static/assets/img/png/CodeAndChords.png" class="shadow rounded-lg overflow-hidden borde h-96" >
-                <div class="mt-8">
-                    <p class="mt-2 text-gray-600">https://www.youtube.com/@cento7517</p>
-                    <div class="mt-5">
-                        <button type="button" class="inline-flex items-center rounded-md border border-transparent bg-gray-800 px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-gray-900">{{ $t('archiving.youtube_content') }}</button>
+                <a 
+                    class="p-8 max-w-lg border border-indigo-300 rounded-2xl hover:shadow-2xl hover:shadow-indigo-500 flex flex-col items-center"
+                    href="https://www.youtube.com/@cento7517"
+                >
+                    <img src="/static/assets/img/png/CodeAndChords.png" class="shadow rounded-lg overflow-hidden borde h-96" >
+                    <div class="mt-8">
+                        <div class="mt-5">
+                            <button type="button" class="inline-flex items-center rounded-md border border-transparent bg-gray-800 px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-gray-900">{{ $t('archiving.youtube_content') }}</button>
+                        </div>
                     </div>
-                </div>
+                </a>
+                <a 
+                    class="p-8 max-w-lg border border-indigo-300 rounded-2xl hover:shadow-2xl hover:shadow-indigo-500 flex flex-col items-center"
+                    href="https://www.instagram.com/tokyo_kim90?igsh=YmtseWY4czYyaGZt&utm_source=qr"
+                >
+                    <img src="/static/assets/img/jpg/Instagram.jpg" class="shadow rounded-lg overflow-hidden borde h-96" >
+                    <div class="mt-8">
+                        <div class="mt-5">
+                            <button type="button" class="inline-flex rounded-md border border-transparent bg-gray-800 px-3 py-2 text-sm font-medium leading-4 text-white shadow-sm hover:bg-gray-900">{{ $t('archiving.instagram_content') }}</button>
+                        </div>
+                    </div>
                 </a>
             </div>
         </div>
