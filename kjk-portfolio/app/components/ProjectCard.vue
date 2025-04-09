@@ -25,7 +25,7 @@
 <template>
     <div v-if ="page" class="border w-auto max-w-full mx-3 rounded-lg shadow-2xl mt-5">
       <div class="flex flex-col items-start px-6 py-4">
-        <div class="flex flex-col w-24 sm:w-48 md:w-90 border-b-1 border-gray-300 mb-3">
+        <div class="inline-block border-b-1 border-gray-300 mb-3">
           <div class="font-bold text-xl">{{page?.title}}</div>
           <div class="h-1 border-2 border-blue-500 mb-1"></div>
           <p class="text-gray-500">{{ page?.date }}</p>
