@@ -7,7 +7,8 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@nuxt/image',
     '@nuxt/scripts',
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    '@nuxtjs/robots'
   ],
 
   devtools: {
@@ -20,6 +21,11 @@ export default defineNuxtConfig({
     url: 'https://tokyokimportfolio.vercel.app',
     defaultLocale: 'ja',
     indexable: true,
+  },
+  robots: {
+    UserAgent: '*',
+    Disallow: '',
+    Sitemap: 'https://tokyokimportfolio.vercel.app/sitemap_index.xml',
   },
 
   colorMode: {
