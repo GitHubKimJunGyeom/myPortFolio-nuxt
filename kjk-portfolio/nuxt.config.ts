@@ -18,7 +18,7 @@ export default defineNuxtConfig({
 
   site: {
     url: 'https://tokyokimportfolio.vercel.app',
-    defaultLocale: 'en',
+    defaultLocale: 'ja',
     indexable: true,
   },
 
