@@ -6,7 +6,8 @@ export default defineNuxtConfig({
     '@nuxtjs/seo',
     '@nuxt/content',
     '@nuxt/image',
-    '@nuxt/scripts'
+    '@nuxt/scripts',
+    '@nuxtjs/sitemap'
   ],
 
   devtools: {
@@ -16,7 +17,7 @@ export default defineNuxtConfig({
   css: ['~/assets/style/main.css'],
 
   site: {
-    url: 'https://canvas.hrcd.fr',
+    url: 'https://tokyokimportfolio.vercel.app',
     defaultLocale: 'en',
     indexable: true,
   },
@@ -88,4 +89,5 @@ export default defineNuxtConfig({
   ogImage: {
     zeroRuntime: true,
   },
+  
 })

@@ -6,7 +6,7 @@ export default defineAppConfig({
     phone: '(+81) 070 3781 3027'
   },
   seo: {
-    title: 'ポートフォリオ ウェブサイト',
+    title: 'KJK Portfolio',
     description: 'Nuxt3を活用した多言語対応ポートフォリオウェブサイトです。',
     url: 'https://tokyokimportfolio.vercel.app'
   },
