@@ -8,7 +8,7 @@
     <div class="flex items-center justify-center w-screen pb-10 bg-yellow-500">
         <div class="rounded-[12px] bg-white/80 p-4 w-screen md:w-auto shadow-md border flex gap-2 justify-center items-center">
             <div class="mt-8 grid md:grid-cols-10 gap-1">
-                <div class="flex items-center col-span-3 font-bold text-2xl py-1 px-2 m-1">
+                <div class="flex items-center col-span-5 md:col-span-3 font-bold text-2xl py-1 px-2 m-1">
                     <img src="/static/assets/img/svg/nuxt.svg" class="items-center justify-center w-[32px] [h-32px]">
                     {{ $t('skill.language') }}
                 </div>
@@ -30,7 +30,7 @@
                     </li>
                 </ul>
 
-                <div class="flex items-center col-span-3 font-bold text-2xl py-1 px-2 m-1">
+                <div class="flex items-center col-span-5 md:col-span-3 font-bold text-2xl py-1 px-2 m-1">
                     <img src="/static/assets/img/svg/language-typescript.svg" class="w-[32px] [h-32px]">
                     {{ $t('skill.frontend') }}
                 </div>
@@ -51,7 +51,7 @@
                         {{ $t('skill.frontend_sass') }}
                     </li>
                 </ul>
-                <div class="flex items-center col-span-3 font-bold text-2xl py-1 px-2 m-1">
+                <div class="flex items-center col-span-5 md:col-span-3 font-bold text-2xl py-1 px-2 m-1">
                     <img src="/static/assets/img/svg/server-network.svg" class="w-[32px] [h-32px]">
                         {{ $t('skill.backend') }}
                 </div>
@@ -60,7 +60,7 @@
                         {{ $t('skill.backend_laravel') }}
                     </li>
                 </ul>
-                <div class="flex items-center col-span-3 font-bold text-2xl py-1 px-2 m-1">
+                <div class="flex items-center col-span-5 md:col-span-3 font-bold text-2xl py-1 px-2 m-1">
                     <img src="/static/assets/img/svg/database-search.svg" class="w-[32px] [h-32px]">
                         {{ $t('skill.DB') }}
                 </div>
@@ -75,7 +75,7 @@
                         {{ $t('skill.DB_DynamoDB') }}
                     </li>
                 </ul>
-                <div class="flex items-center col-span-3 font-bold text-2xl py-1 px-2 m-1">
+                <div class="flex items-center col-span-5 md:col-span-3 font-bold text-2xl py-1 px-2 m-1">
                     <img src="/static/assets/img/svg/docker.svg" class="w-[32px] [h-32px]">
                     {{ $t('skill.devops') }}
                 </div>
