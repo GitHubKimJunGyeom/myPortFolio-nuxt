@@ -27,6 +27,12 @@ export default defineNuxtConfig({
     Disallow: '',
     Sitemap: 'https://tokyokimportfolio.vercel.app/sitemap_index.xml',
   },
+
+  colorMode: {
+    preference: 'dark',
+    fallback: 'dark',
+  },
+
   content: {
     renderer: {
       anchorLinks: false,
