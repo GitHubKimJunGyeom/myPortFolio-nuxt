@@ -9,7 +9,7 @@
         <div class="rounded-[12px] bg-white/80 p-4 w-screen md:w-auto shadow-md border flex gap-2 justify-center items-center">
             <div class="mt-8 grid sm:grid-cols-1 md:grid-cols-3 gap-1">
                 <a 
-                    class="p-8 max-w-lg border border-indigo-300 rounded-2xl hover:shadow-2xl hover:shadow-indigo-500 flex flex-col items-center"
+                    class="w-full p-8 max-w-lg border border-indigo-300 rounded-2xl hover:shadow-2xl hover:shadow-indigo-500 flex flex-col items-center"
                     href="https://github.com/GitHubKimJunGyeom"
                 >
                     <img src="/static/assets/img/svg/github-logo-vector.svg" class="shadow rounded-lg overflow-hidden border h-96" >
@@ -20,7 +20,7 @@
                     </div>
                 </a>
                 <a 
-                    class="p-8 max-w-lg border border-indigo-300 rounded-2xl hover:shadow-2xl hover:shadow-indigo-500 flex flex-col items-center"
+                    class="w-full p-8 max-w-lg border border-indigo-300 rounded-2xl hover:shadow-2xl hover:shadow-indigo-500 flex flex-col items-center"
                     href="https://www.youtube.com/@cento7517"
                 >
                     <img src="/static/assets/img/png/CodeAndChords.png" class="shadow rounded-lg overflow-hidden borde h-96" >
@@ -31,7 +31,7 @@
                     </div>
                 </a>
                 <a 
-                    class="p-8 max-w-lg border border-indigo-300 rounded-2xl hover:shadow-2xl hover:shadow-indigo-500 flex flex-col items-center"
+                    class="w-full p-8 max-w-lg border border-indigo-300 rounded-2xl hover:shadow-2xl hover:shadow-indigo-500 flex flex-col items-center"
                     href="https://www.instagram.com/tokyo_kim90?igsh=YmtseWY4czYyaGZt&utm_source=qr"
                 >
                     <img src="/static/assets/img/jpg/Instagram.jpg" class="shadow rounded-lg overflow-hidden borde h-96" >
