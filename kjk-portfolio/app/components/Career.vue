@@ -14,5 +14,5 @@
   <CareerItem 
     v-for="career in careers.career"
     :name="career.name"
-    />
+  />
 </template>
