@@ -24,7 +24,7 @@
 
 #### 🛠️ 担当業務
 - ・シニア開発者としてCMS(Contents Management System)サイト維持保守
-- ・NUXTフロントのjQUery導入撤回、JavaScript、TypeScriptのモジュール化及びES6文法導入、バニラビューとNUXT文法が混在されている問題などのリファクタリング
+- ・NUXTフロントのjQuery導入撤回、JavaScript、TypeScriptのモジュール化及びES6文法導入、バニラビューとNUXT文法が混在されている問題などのリファクタリング
 - ・顧客要請事項に従った新しい機能、バッチの開発
 - ・外部API導入及び連携
 - ・PHP、Laravelバージョンアップに従った見積作成
