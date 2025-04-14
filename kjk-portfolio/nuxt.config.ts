@@ -95,5 +95,12 @@ export default defineNuxtConfig({
   ogImage: {
     zeroRuntime: true,
   },
-  
+  sitemap: {
+    hostname: 'https://tokyokimportfolio.vercel.app',
+    i18n: true,
+    i18n: {
+      locales: ['ja', 'ko'],
+      routesNameSeparator: '___'
+    }
+  }
 })
