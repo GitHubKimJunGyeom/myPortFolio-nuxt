@@ -6,9 +6,16 @@ export default defineAppConfig({
     phone: '(+81) 070 3781 3027'
   },
   seo: {
-    title: 'KJK Portfolio',
-    description: 'Nuxt3を活用した多言語対応ポートフォリオウェブサイトです。',
-    url: 'https://tokyokimportfolio.vercel.app'
+    ko: {
+      title: '김준겸의 포트폴리오',
+      description: 'Nuxt3를 활용한 다국어 대응 포트폴리오 사이트입니다.',
+      url: 'https://tokyokimportfolio.vercel.app/ko',
+    },
+    ja: {
+      title: 'キムジュンギョムのポートフォリオ',
+      description: 'Nuxt3を活用した多言語対応ポートフォリオウェブサイトです。',
+      url: 'https://tokyokimportfolio.vercel.app/ja',
+    },
   },
   ui: {
     modal: {

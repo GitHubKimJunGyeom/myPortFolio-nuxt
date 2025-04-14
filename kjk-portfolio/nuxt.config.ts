@@ -4,11 +4,11 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxtjs/i18n',
     '@nuxtjs/seo',
+    '@nuxtjs/sitemap',
+    '@nuxtjs/robots',
     '@nuxt/content',
     '@nuxt/image',
-    '@nuxt/scripts',
-    '@nuxtjs/sitemap',
-    '@nuxtjs/robots'
+    '@nuxt/scripts'
   ],
 
   devtools: {

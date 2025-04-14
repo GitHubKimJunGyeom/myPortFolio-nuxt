@@ -1,37 +1,39 @@
 <script setup lang="ts">
-  const { seo, profile } = useAppConfig();
+    const { seo, profile } = useAppConfig();
+    const { locale } = useI18n();
+    const lang = locale.value;
 
-  useSeoMeta({
-    ogSiteName: seo.title,
-    ogTitle: seo.title,
-    ogDescription: seo.description,
-    ogType: 'website',
-    ogUrl: seo.url,
-    author: profile.name,
-    title: seo.title,
-    description: seo.description,
-  });
+    useSeoMeta({
+        ogSiteName: seo[lang].title,
+        ogTitle: seo[lang].title,
+        ogDescription: seo[lang].description,
+        ogType: 'website',
+        ogUrl: seo[lang].url,
+        author: profile.name,
+        title: seo[lang].title,
+        description: seo[lang].description,
+    });
 
-  useHead({
-    title: 'KJK Portfolio',
-    meta: [
-      { name: 'viewport', content: 'width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1' },
-      { name: 'charset', content: 'utf-8' },
-      { name: 'color-scheme', content: 'light dark' },
-    ],
-    link: [
-      { rel: 'stylesheet' },
-    ],
-    script: [
-      { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-K2VN577QKM' },
-      { children: `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){ dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-K2VN577QKM');
-      ` }
-    ]
-  });
+    useHead({
+        title: 'KJK Portfolio',
+        meta: [
+        { name: 'viewport', content: 'width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1' },
+        { name: 'charset', content: 'utf-8' },
+        { name: 'color-scheme', content: 'light dark' },
+        ],
+        link: [
+        { rel: 'stylesheet' },
+        ],
+        script: [
+        { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-K2VN577QKM' },
+        { children: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){ dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'G-K2VN577QKM');
+        ` }
+        ]
+    });
 </script>
 <style>
 /** 영어 */
