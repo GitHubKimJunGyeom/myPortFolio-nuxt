@@ -36,6 +36,16 @@ export const collections = {
       ),
     }),
   }),
+  extreme_ja: defineCollection({
+    type: 'page',
+    source: 'careers/ja/extreme.md',
+    schema: z.object({})
+  }),
+  extreme_ko: defineCollection({
+    type: 'page',
+    source: 'careers/ko/extreme.md',
+    schema: z.object({})
+  }),
   eightbit_ja: defineCollection({
     type: 'page',
     source: 'careers/ja/eightbit.md',
