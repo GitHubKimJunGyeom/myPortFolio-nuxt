@@ -16,23 +16,10 @@ export default defineNuxtConfig({
   },
 
   css: ['~/assets/style/main.css'],
-
-  site: {
-    url: 'https://tokyokimportfolio.vercel.app',
-    defaultLocale: 'ja',
-    indexable: true,
-  },
-  robots: {
-    UserAgent: '*',
-    Disallow: '',
-    Sitemap: 'https://tokyokimportfolio.vercel.app/sitemap_index.xml',
-  },
-
   colorMode: {
     preference: 'light',
     fallback: 'light',
   },
-
   content: {
     renderer: {
       anchorLinks: false,
@@ -42,7 +29,6 @@ export default defineNuxtConfig({
       dev: true,
     },
   },
-
   mdc: {
     highlight: {
       theme: {
@@ -77,7 +63,6 @@ export default defineNuxtConfig({
     defaultLocale: 'ja',
     vueI18n: '~/i18n.config.ts',
   },
-
   icon: {
     customCollections: [
       {
@@ -91,16 +76,7 @@ export default defineNuxtConfig({
     },
     provider: 'iconify',
   },
-
   ogImage: {
     zeroRuntime: true,
-  },
-  sitemap: {
-    hostname: 'https://tokyokimportfolio.vercel.app',
-    i18n: true,
-    i18n: {
-      locales: ['ja', 'ko'],
-      routesNameSeparator: '___'
-    }
   }
 })
