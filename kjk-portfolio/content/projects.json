@@ -2,6 +2,9 @@
   "project": [
     {
       "name": "introduction"
+    },
+    {
+      "name": "myBlog"
     }
   ]
 }
