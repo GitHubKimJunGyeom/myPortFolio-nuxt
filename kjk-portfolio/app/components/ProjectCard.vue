@@ -9,13 +9,13 @@
     }
   })
 
-  const { locale, t, localeProperties } = useI18n()
+  const { locale } = useI18n()
   const path = computed(() => withLeadingSlash(joinURL("projects", locale.value, props.name)))
   const collectionName = `${props.name}_${locale.value}`;
   const collection = computed(() => collectionName as keyof Collections)
 
   const { data: page } = await useAsyncData(path.value, async () =>
-    await queryCollection(collection.value).path(path.value).first() as Collections['introduction_ko'] | Collections['introduction_ja']
+    await queryCollection(collection.value).path(path.value).first() as Collections[`introduction_ko`] | Collections['introduction_ja'] | Collections['loglist_ja'] | Collections['loglist_ko'] 
   )
 
   if (!page.value) {
@@ -40,7 +40,7 @@
           </ul>
         </div>
       </div>
-      <div class="flex flex-col items-start bg-gray-100 px-6 py-3 rounded-lg">
+      <div class="flex flex-col items-start px-6 py-3 rounded-lg">
         <p class="border-l-4 border-gray-500 pl-2.5 mb-2">
           <a href="https://tokyokimportfolio.vercel.app" class="text-blue-500 hover:underline">
             {{ page?.url }}

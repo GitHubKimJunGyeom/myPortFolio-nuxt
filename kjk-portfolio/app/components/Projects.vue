@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-  const projects = await queryCollection('projects').first()
+  const projects = await queryCollection('projects').first() as any;
 </script>
 <template>
   <div id="projects" class="flex items-center justify-center w-screen pt-7 pb-6">

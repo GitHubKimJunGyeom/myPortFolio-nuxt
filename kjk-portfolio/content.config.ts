@@ -12,8 +12,9 @@ const commonProjectSchema = z.object({
   url: z.string().nonempty(),
 })
 
-
 export const collections = {
+
+  // json collection
   careers: defineCollection({
     type: 'data',
     source: 'careers.json',
@@ -36,6 +37,8 @@ export const collections = {
       ),
     }),
   }),
+
+  // careers collection
   extreme_ja: defineCollection({
     type: 'page',
     source: 'careers/ja/extreme.md',
@@ -77,7 +80,7 @@ export const collections = {
     schema: z.object({})
   }),
 
-
+  // projects collection
   introduction_ko: defineCollection({
     type: 'page',
     source: 'projects/ko/introduction.md',
@@ -87,5 +90,15 @@ export const collections = {
     type: 'page',
     source: 'projects/ja/introduction.md',
     schema: commonProjectSchema
-  })
+  }),
+  loglist_ko: defineCollection({
+    type: 'page',
+    source: 'projects/ko/loglist.md',
+    schema: commonProjectSchema
+  }),
+  loglist_ja: defineCollection({
+    type: 'page',
+    source: 'projects/ja/loglist.md',
+    schema: commonProjectSchema
+  }),
 }
