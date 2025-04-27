@@ -10,9 +10,9 @@ sub_description: [
 ] 
 tags:
   Nuxt3, Vercel, Tailwindcss, TypeScript, JavaScript
-image: https://tokyokimportfolio.vercel.app/ja/static/assets/img/jpg/backgroud.jpg
+image: https://kjk-portfolio.vercel.app/ja/static/assets/img/jpg/backgroud.jpg
 readingTime: "5"
-url: https://tokyokimportfolio.vercel.app
+url: https://kjk-portfolio.vercel.app
 ---
 
 # 📌 概要

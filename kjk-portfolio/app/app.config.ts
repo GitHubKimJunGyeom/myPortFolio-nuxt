@@ -9,12 +9,12 @@ export default defineAppConfig({
     ko: {
       title: '김준겸의 포트폴리오',
       description: 'Nuxt3를 활용한 다국어 대응 포트폴리오 사이트입니다.',
-      url: 'https://tokyokimportfolio.vercel.app/ko',
+      url: 'https://kjk-portfolio.vercel.app/ko',
     },
     ja: {
       title: 'キムジュンギョムのポートフォリオ',
       description: 'Nuxt3を活用した多言語対応ポートフォリオウェブサイトです。',
-      url: 'https://tokyokimportfolio.vercel.app/ja',
+      url: 'https://kjk-portfolio.vercel.app/ja',
     },
   },
   ui: {

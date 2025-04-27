@@ -42,7 +42,7 @@
       </div>
       <div class="flex flex-col items-start px-6 py-3 rounded-lg">
         <p class="border-l-4 border-gray-500 pl-2.5 mb-2">
-          <a href="https://tokyokimportfolio.vercel.app" class="text-blue-500 hover:underline">
+          <a href="https://kjk-portfolio.vercel.app" class="text-blue-500 hover:underline">
             {{ page?.url }}
           </a>
         </p>
