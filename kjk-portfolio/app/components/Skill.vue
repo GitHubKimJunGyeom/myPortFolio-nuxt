@@ -22,14 +22,7 @@
                     <li class="bg-blue-600 text-white text-center py-1 px-2 m-1 text-sm rounded">
                         {{ $t('skill.language_php') }}
                     </li>
-                    <li class="bg-green-500 text-white text-center py-1 px-2 m-1 text-sm rounded">
-                        {{ $t('skill.language_cSharp') }}
-                    </li>
-                    <li class="bg-red-500 text-white text-center py-1 px-2 m-1 text-sm rounded">
-                        {{ $t('skill.language_ruby') }}
-                    </li>
                 </ul>
-
                 <div class="flex items-center col-span-5 md:col-span-3 font-bold text-2xl py-1 px-2 m-1 text-black">
                     <img src="/static/assets/img/svg/language-typescript.svg" class="w-[32px] [h-32px]">
                     {{ $t('skill.frontend') }}
@@ -40,9 +33,6 @@
                     </li>
                     <li class="bg-red-500 text-white text-center py-1 px-2 m-1 text-sm rounded">
                         {{ $t('skill.frontend_blade') }}
-                    </li>
-                    <li class="bg-purple-400 text-white text-center py-1 px-2 m-1 text-sm rounded">
-                        {{ $t('skill.frontend_blazor') }}
                     </li>
                     <li class="bg-blue-600 text-white text-center py-1 px-2 m-1 text-sm rounded">
                         {{ $t('skill.frontend_tailwindcss') }}
@@ -68,9 +58,6 @@
                     <li class="bg-blue-600 text-white text-center py-1 px-2 m-1 text-sm rounded">
                         {{ $t('skill.DB_MySql') }}
                     </li>
-                    <li class="bg-gray-800 text-white text-center py-1 px-2 m-1 text-sm rounded">
-                        {{ $t('skill.DB_SqlServer') }}
-                    </li>
                     <li class="bg-yellow-500 text-white text-center py-1 px-2 m-1 text-sm rounded">
                         {{ $t('skill.DB_DynamoDB') }}
                     </li>
@@ -84,16 +71,13 @@
                         {{ $t('skill.devops_aws') }}
                     </li>
                     <li class="bg-gray-500 text-white text-center py-1 px-2 m-1 text-sm rounded">
-                        {{ $t('skill.devops_googlespanner') }}
+                        {{ $t('skill.devops_google_cloud') }}
                     </li>
                     <li class="bg-blue-600 text-white text-center py-1 px-2 m-1 text-sm rounded">
                         {{ $t('skill.devops_docker') }}
                     </li>
                     <li class="bg-gray-800 text-white text-center py-1 px-2 m-1 text-sm rounded">
                         {{ $t('skill.devops_vercel') }}
-                    </li>
-                    <li class="bg-gray-100 text-gray-800 text-center py-1 px-2 m-1 text-sm rounded">
-                        {{ $t('skill.devops_render') }}
                     </li>
                 </ul>
             </div>
