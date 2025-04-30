@@ -1,6 +1,6 @@
 {
-  "name": "KJK Portfolio",
-  "author": "HugoRCD",
+  "name": "kjk-portfolio",
+  "author": "KimJunGyeom",
   "private": true,
   "license": "Apache-2.0",
   "scripts": {
@@ -24,7 +24,6 @@
     "@nuxt/scripts": "0.10.5",
     "@nuxt/ui": "3.0.0-beta.2",
     "@nuxtjs/i18n": "9.2.1",
-    "@nuxtjs/robots": "^5.2.9",
     "@nuxtjs/seo": "^2.2.0",
     "@vueuse/core": "12.8.2",
     "@vueuse/nuxt": "12.8.2",
