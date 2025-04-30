@@ -17,21 +17,21 @@
     useHead({
         title: 'KJK Portfolio',
         meta: [
-        { name: 'viewport', content: 'width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1' },
-        { name: 'charset', content: 'utf-8' },
-        { name: 'color-scheme', content: 'light dark' },
+            { name: 'viewport', content: 'width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1' },
+            { name: 'charset', content: 'utf-8' },
+            { name: 'color-scheme', content: 'light' },
         ],
         link: [
-        { rel: 'stylesheet' },
+            { rel: 'stylesheet' },
         ],
         script: [
-        { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-K2VN577QKM' },
-        { children: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){ dataLayer.push(arguments); }
-            gtag('js', new Date());
-            gtag('config', 'G-K2VN577QKM');
-        ` }
+            { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=G-K2VN577QKM' },
+            { children: 
+                `window.dataLayer = window.dataLayer || [];
+                function gtag(){ dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-K2VN577QKM');`
+            }
         ]
     });
 </script>
