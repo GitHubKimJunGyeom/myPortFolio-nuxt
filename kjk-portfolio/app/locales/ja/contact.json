@@ -3,7 +3,6 @@
   "name": "お名前",
   "name_placeholder": "山田太郎",
   "email": "メールアドレス",
-  "email_placeholder": "readme@gmail.com",
   "phone": "電話番号",
   "phone_placeholder": "090-1234-5678",
   "subject": "お問い合わせ",

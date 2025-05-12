@@ -110,7 +110,7 @@ watch(
             v-model="state.email"
             autocomplete="email"
             class="w-full"
-            :placeholder="$t('contact.email_placeholder')"
+            placeholder="readme@gmail.com"
           />
         </UFormField>
 
@@ -167,7 +167,6 @@ watch(
           </UTooltip>
         </div>
       </UForm>
-   
-        </div>
+    </div>
   </section>
 </template>

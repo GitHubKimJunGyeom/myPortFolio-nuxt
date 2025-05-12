@@ -3,7 +3,6 @@
   "name": "성함",
   "name_placeholder": "홍길동",
   "email": "메일주소",
-  "email_placeholder": "readme@gmail.com",
   "phone": "전화번호",
   "phone_placeholder": "090-1234-5678",
   "subject": "문의사항",
