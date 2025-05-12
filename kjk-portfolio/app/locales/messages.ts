@@ -19,6 +19,9 @@ import ko_resolution from './ko/resolution.json'
 import ja_skill from './ja/skill.json'
 import ko_skill from './ko/skill.json'
 
+import ja_contact from './ja/contact.json'
+import ko_contact from './ko/contact.json'
+
 const messages = {
   ja: {
     aboutme: ja_aboutme,
@@ -28,6 +31,7 @@ const messages = {
     projects: ja_projects,
     resolution: ja_resolution,
     skill: ja_skill,
+    contact: ja_contact,
   },
   ko: {
     aboutme: ko_aboutme,
@@ -37,6 +41,7 @@ const messages = {
     projects: ko_projects,
     resolution: ko_resolution,
     skill: ko_skill,
+    contact: ko_contact,
   },
 }
 
