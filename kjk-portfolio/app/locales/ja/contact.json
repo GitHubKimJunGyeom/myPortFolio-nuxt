@@ -1,0 +1,30 @@
+{
+  "title": "お問い合わせ",
+  "name": "お名前",
+  "name_placeholder": "山田太郎",
+  "email": "メールアドレス",
+  "email_placeholder": "readme@gmail.com",
+  "phone": "電話番号",
+  "phone_placeholder": "090-1234-5678",
+  "subject": "お問い合わせ",
+  "subject_placeholder": "お問い合わせの件名",
+  "content": "内容",
+  "content_placeholder": "お問い合わせの内容",
+  "disabled": "内容を入力、確認をお願いします。",
+  "submit": "送信",
+  "validate": {
+    "name": "お名前を入力してください。",
+    "email": "正しいメールアドレスを入力してください。",
+    "phone": "電話番号を入力してください。",
+    "subject": "件名を入力してください。",
+    "content": "内容を入力してください。"
+  },
+  "success": {
+    "title": "送信完了",
+    "message": "お問い合わせありがとうございました。"
+  },
+  "error": {
+    "title": "送信失敗",
+    "message": "送信に失敗しました。"
+  }
+}
