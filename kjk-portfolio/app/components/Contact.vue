@@ -23,11 +23,12 @@ type Schema = z.output<typeof schema>
 
 const loading = ref(false)
 const isSendEnabled = ref(false)
+let result: any = null
 
 async function onSubmit(event: FormSubmitEvent<Schema>) {
   loading.value = true
   try {
-    await $fetch('/api/sendMail', {
+    result = await $fetch('/api/sendMail', {
       method: 'POST',
       body: event.data,
     })
@@ -39,11 +40,20 @@ async function onSubmit(event: FormSubmitEvent<Schema>) {
       content: ''
     };
     isSendEnabled.value = false;
-    toast.add({
-      title: t('contact.success.title'),
-      description: t('contact.success.message'),
-      color: 'success',
-    });
+    if (result.success) {
+      toast.add({
+        title: t('contact.success.title'),
+        description: t('contact.success.message'),
+        color: 'success',
+      });
+    }
+    else {
+      toast.add({
+        title: t('contact.error.title'),
+        description: t('contact.error.message'),
+        color: 'error'
+      });
+    }
   }
   catch {
     toast.add({

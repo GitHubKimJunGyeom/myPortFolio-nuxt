@@ -15,6 +15,6 @@
         <Archiving />
         <Projects />
         <Career />
-        <!-- <Contact /> -->
+        <Contact />
     </div>
 </template>
