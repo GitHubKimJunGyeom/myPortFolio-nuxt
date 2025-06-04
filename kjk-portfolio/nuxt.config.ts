@@ -8,11 +8,9 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/scripts'
   ],
-
   devtools: {
     enabled: true,
   },
-
   css: ['~/assets/style/main.css'],
   colorMode: {
     preference: 'light',
@@ -36,17 +34,13 @@ export default defineNuxtConfig({
       },
     },
   },
-
   future: {
     compatibilityVersion: 4,
   },
-
   experimental: {
     viewTransition: true,
   },
-
   compatibilityDate: '2025-01-05',
-
   i18n: {
     locales: [
       { code: 'ja', name: 'Japanese', language: 'ja-JP' },
@@ -77,4 +71,4 @@ export default defineNuxtConfig({
   ogImage: {
     zeroRuntime: true,
   }
-})
+});

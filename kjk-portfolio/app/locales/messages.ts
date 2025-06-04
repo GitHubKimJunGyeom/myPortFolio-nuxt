@@ -1,26 +1,26 @@
-import ja_aboutme from './ja/aboutme.json'
-import ko_aboutme from './ko/aboutme.json'
+import ja_aboutme from './ja/aboutme.json';
+import ko_aboutme from './ko/aboutme.json';
 
-import ja_archiving from './ja/archiving.json'
-import ko_archiving from './ko/archiving.json'
+import ja_archiving from './ja/archiving.json';
+import ko_archiving from './ko/archiving.json';
 
-import ja_career from './ja/career.json'
-import ko_career from './ko/career.json'
+import ja_career from './ja/career.json';
+import ko_career from './ko/career.json';
 
-import ja_introduce from './ja/introduce.json'
-import ko_introduce from './ko/introduce.json'
+import ja_introduce from './ja/introduce.json';
+import ko_introduce from './ko/introduce.json';
 
-import ja_projects from './ja/projects.json'
-import ko_projects from './ko/projects.json'
+import ja_projects from './ja/projects.json';
+import ko_projects from './ko/projects.json';
 
-import ja_resolution from './ja/resolution.json'
-import ko_resolution from './ko/resolution.json'
+import ja_resolution from './ja/resolution.json';
+import ko_resolution from './ko/resolution.json';
 
-import ja_skill from './ja/skill.json'
-import ko_skill from './ko/skill.json'
+import ja_skill from './ja/skill.json';
+import ko_skill from './ko/skill.json';
 
-import ja_contact from './ja/contact.json'
-import ko_contact from './ko/contact.json'
+import ja_contact from './ja/contact.json';
+import ko_contact from './ko/contact.json';
 
 const messages = {
   ja: {
@@ -43,6 +43,6 @@ const messages = {
     skill: ko_skill,
     contact: ko_contact,
   },
-}
+};
 
-export default messages
+export default messages;

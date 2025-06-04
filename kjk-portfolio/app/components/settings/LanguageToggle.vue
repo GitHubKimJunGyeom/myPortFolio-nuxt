@@ -1,15 +1,15 @@
 <script setup lang="ts">
-const { locale: current, setLocaleCookie, locales } = useI18n()
+  const { locale: current, setLocaleCookie, locales } = useI18n();
 
-const currentLocale = computed(() => {
-  return locales.value.find(locale => locale.code === current.value)
-})
+  const currentLocale = computed(() => {
+    return locales.value.find(locale => locale.code === current.value);
+  });
 
-watch(current, (newLocale) => {
-  setLocaleCookie(newLocale)
-})
+  watch(current, (newLocale) => {
+    setLocaleCookie(newLocale);
+  });
 
-const switchLocalePath = useSwitchLocalePath()
+  const switchLocalePath = useSwitchLocalePath();
 </script>
 
 <template>

@@ -1,11 +1,9 @@
-<script lang="ts">
-</script>
 <template>
+  <div>
+    <LayoutNavbar />
     <div>
-        <LayoutNavbar />
-        <div>
-            <slot />
-        </div>
-        <LayoutFooter />
+      <slot />
     </div>
+    <LayoutFooter />
+  </div>
 </template>

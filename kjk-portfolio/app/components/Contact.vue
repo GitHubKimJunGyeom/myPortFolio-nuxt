@@ -1,83 +1,85 @@
 <script setup lang="ts">
-import * as z from 'zod'
-import type { FormSubmitEvent } from '#ui/types'
-const { t } = useI18n()
-const toast = useToast()
+  import * as z from 'zod';
+  import type { FormSubmitEvent } from '#ui/types';
+  const { t } = useI18n();
+  const toast = useToast();
 
-const state = ref({
-  name: '',
-  email: '',
-  phone: '',
-  subject: '',
-  content: '',
-})
+  const state = ref({
+    name: '',
+    email: '',
+    phone: '',
+    subject: '',
+    content: '',
+  });
 
-const schema = z.object({
-  name: z.string().nonempty(t('contact.validate.name')),
-  email: z.string().email(t('contact.validate.email')),
-  phone: z.string().nonempty(t('contact.validate.phone')),
-  subject: z.string().nonempty(t('contact.validate.subject')),
-  content: z.string().nonempty(t('contact.validate.content'))
-})
-type Schema = z.output<typeof schema>
+  const schema = z.object({
+    name: z.string().nonempty(t('contact.validate.name')),
+    email: z.string().email(t('contact.validate.email')),
+    phone: z.string().nonempty(t('contact.validate.phone')),
+    subject: z.string().nonempty(t('contact.validate.subject')),
+    content: z.string().nonempty(t('contact.validate.content'))
+  });
+  
+  type Schema = z.output<typeof schema>;
 
-const loading = ref(false)
-const isSendEnabled = ref(false)
-let result: any = null
+  const loading = ref(false);
+  const isSendEnabled = ref(false);
+  let result: any = null;
 
-async function onSubmit(event: FormSubmitEvent<Schema>) {
-  loading.value = true
-  try {
-    result = await $fetch('/api/sendMail', {
-      method: 'POST',
-      body: event.data,
-    })
-    state.value = {
-      name: '',
-      email: '',
-      phone: '',
-      subject: '',
-      content: ''
-    };
-    isSendEnabled.value = false;
-    if (result.success) {
-      toast.add({
-        title: t('contact.success.title'),
-        description: t('contact.success.message'),
-        color: 'success',
+  async function onSubmit(event: FormSubmitEvent<Schema>) {
+    loading.value = true;
+    try {
+      result = await $fetch('/api/sendMail', {
+        method: 'POST',
+        body: event.data,
       });
-    }
-    else {
+
+      state.value = {
+        name: '',
+        email: '',
+        phone: '',
+        subject: '',
+        content: ''
+      };
+
+      isSendEnabled.value = false;
+
+      if (result.success) {
+        toast.add({
+          title: t('contact.success.title'),
+          description: t('contact.success.message'),
+          color: 'success',
+        });
+      } else {
+        toast.add({
+          title: t('contact.error.title'),
+          description: t('contact.error.message'),
+          color: 'error'
+        });
+      }
+    } catch {
       toast.add({
         title: t('contact.error.title'),
         description: t('contact.error.message'),
         color: 'error'
       });
     }
-  }
-  catch {
-    toast.add({
-      title: t('contact.error.title'),
-      description: t('contact.error.message'),
-      color: 'error'
-    });
-  }
-  loading.value = false
-}
+    loading.value = false;
+  };
 
-// 입력값이 바뀔 때마다 검증
-watch(
-  state,
-  () => {
-    try {
-      schema.parse(state.value);
-      isSendEnabled.value = true;
-    } catch {
-      isSendEnabled.value = false;
-    }
-  },
-  { deep: true }
-)
+  // 입력값이 바뀔 때마다 검증
+  watch(
+    state,
+    () => {
+      try {
+        schema.parse(state.value);
+        isSendEnabled.value = true;
+      } catch {
+        isSendEnabled.value = false;
+      }
+    },
+    { deep: true }
+  )
 </script>
 
 <template>

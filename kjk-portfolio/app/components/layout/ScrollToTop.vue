@@ -1,19 +1,18 @@
 <script setup lang="ts">
-  const isScrolling = ref(false)
+  const isScrolling = ref(false);
 
   onMounted(() => {
     window.addEventListener('scroll', () => {
       isScrolling.value = window.scrollY > 0
-    })
-  })
+    });
+  });
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
-    })
-  }
-
+    });
+  };
 </script>
 
 <template>

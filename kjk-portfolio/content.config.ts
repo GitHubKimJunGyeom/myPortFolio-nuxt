@@ -1,4 +1,4 @@
-import { defineCollection, z } from '@nuxt/content'
+import { defineCollection, z } from '@nuxt/content';
 
 const commonProjectSchema = z.object({
   title: z.string().nonempty(),
@@ -10,7 +10,7 @@ const commonProjectSchema = z.object({
   image: z.string().url(),
   readingTime: z.string().nonempty(),
   url: z.string().nonempty(),
-})
+});
 
 export const collections = {
 
@@ -101,4 +101,4 @@ export const collections = {
     source: 'projects/ja/loglist.md',
     schema: commonProjectSchema
   }),
-}
+};
