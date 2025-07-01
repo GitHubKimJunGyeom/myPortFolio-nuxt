@@ -43,8 +43,18 @@ export default defineNuxtConfig({
   compatibilityDate: '2025-01-05',
   i18n: {
     locales: [
-      { code: 'ja', name: 'Japanese', language: 'ja-JP' },
-      { code: 'ko', name: 'Korean', language: 'ko-KR' }
+      { 
+        code: 'ja', 
+        name: 'Japanese', 
+        language: 'ja-JP',
+        displayCode: 'JP'
+      },
+      { 
+        code: 'ko',
+        name: 'Korean',
+        language: 'ko-KR',
+        displayCode: 'KR'
+      }
     ],
     detectBrowserLanguage: {
       useCookie: true,

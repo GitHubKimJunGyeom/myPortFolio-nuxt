@@ -24,7 +24,7 @@
           class="font-semibold"
           :class="locale.code === currentLocale?.code ? 'text-amber-600' : 'text-neutral-500'"
         >
-          {{ locale.code }}
+          {{ locale.displayCode }}
         </span>
       </NuxtLink>
   </div>
