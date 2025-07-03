@@ -101,4 +101,14 @@ export const collections = {
     source: 'projects/ja/loglist.md',
     schema: commonProjectSchema
   }),
+  myapi_ko: defineCollection({
+    type: 'page',
+    source: 'projects/ko/myapi.md',
+    schema: commonProjectSchema
+  }),
+  myapi_ja: defineCollection({
+    type: 'page',
+    source: 'projects/ja/myapi.md',
+    schema: commonProjectSchema
+  })
 };
