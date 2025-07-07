@@ -10,9 +10,9 @@ sub_description: [
 ]
 tags:
   Nuxt3, Vercel, Tailwindcss, TypeScript, JavaScript, Notion API, Notion Client Renderer
-image: https://log-and-list.vercel.app/ja/static/assets/img/png/LogAndList.png
+image: https://www.log-and-list.com/ja/static/assets/img/png/LogAndList.png
 readingTime: "5"
-url: https://log-and-list.vercel.app
+url: https://www.log-and-list.com
 ---
 
 # 📌 Summary
