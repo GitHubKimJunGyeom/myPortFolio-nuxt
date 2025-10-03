@@ -19,8 +19,11 @@
           <li class="bg-gray-500 text-white text-center py-1 px-2 m-1 text-sm rounded">
             {{ $t('skill.language_javascript') }}
           </li>
-          <li class="bg-blue-600 text-white text-center py-1 px-2 m-1 text-sm rounded">
+          <li class="bg-blue-400 text-white text-center py-1 px-2 m-1 text-sm rounded">
             {{ $t('skill.language_php') }}
+          </li>
+          <li class="bg-purple-500 text-white text-center py-1 px-2 m-1 text-sm rounded">
+            {{ $t('skill.language_Csharp') }}
           </li>
         </ul>
         <div class="flex items-center col-span-5 md:col-span-3 font-bold text-2xl py-1 px-2 m-1 text-black">
@@ -32,7 +35,7 @@
             {{ $t('skill.frontend_nuxt') }}
           </li>
           <li class="bg-red-500 text-white text-center py-1 px-2 m-1 text-sm rounded">
-            {{ $t('skill.frontend_blade') }}
+            {{ $t('skill.frontend_Bootstrap') }}
           </li>
           <li class="bg-blue-600 text-white text-center py-1 px-2 m-1 text-sm rounded">
             {{ $t('skill.frontend_tailwindcss') }}
@@ -48,6 +51,9 @@
         <ul class="col-span-7 text-2xl py-1 px-2 m-1 text-left flex flex-wrap">
           <li class="bg-red-500 text-white text-center py-1 px-2 m-1 text-sm rounded">
             {{ $t('skill.backend_laravel') }}
+          </li>
+          <li class="bg-blue-600 text-white text-center py-1 px-2 m-1 text-sm rounded">
+            {{ $t('skill.backend_dotnet') }}
           </li>
         </ul>
         <div class="flex items-center col-span-5 md:col-span-3 font-bold text-2xl py-1 px-2 m-1 text-black">
